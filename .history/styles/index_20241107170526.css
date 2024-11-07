@@ -121,7 +121,6 @@ section {
   margin: auto;
   width: 70%;
   margin-bottom: 20px;
-  text-align: center;
 }
 
 .hero {
@@ -298,7 +297,6 @@ border-image-source: linear-gradient(180deg, #1EE981 0%, #0E92CA 71.61%);
     width: 70%;
     margin-bottom: 20px;
     color: #fff;
-    text-align: center;
 }
 
 section h2 {
