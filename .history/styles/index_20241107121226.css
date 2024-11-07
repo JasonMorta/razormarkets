@@ -1,0 +1,193 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* Reset some basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+
+  background-color: #121619; /* Dark background */
+  color: #FFFFFF; /* Light text */
+  line-height: 1.6;
+}
+
+.header-content {
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #1f1f1f; /* Header background */
+}
+
+.logo img {
+  height: 80px;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+
+
+nav a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+}
+
+nav a:hov
+
+.auth-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.auth-buttons .btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  width: 100px;
+  height: 40px;
+  text-align: center  ;
+}
+
+.signup {
+  background-color: #00d1ff; /* Light blue */
+  color: #FFFFFF;
+}
+
+.login {
+  background-color: #00FF8C; /* Green */
+  color: #FFFFFF;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 16px;
+  max-width: 600px;
+  margin: 0 auto 30px;
+  color: #BFBFBF; /* Light gray for text */
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.cta-buttons .btn {
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.primary {
+  background-color: #00d1ff;
+  color: #FFFFFF;
+}
+
+.secondary {
+  background-color: #00FF8C;
+  color: #FFFFFF;
+}
+
+/* Wave SVG styling */
+.wave-svg {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.wave-svg svg {
+  width: 100%;
+  height: auto;
+}
+
+/* Features Section */
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 20px;
+  background-color: #121619; /* Matches the dark background */
+}
+
+.feature-card {
+  background: #1f1f1f; /* Dark card background */
+  border: 2px solid transparent;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  width: 220px;
+  transition: border 0.3s ease;
+}
+
+.feature-card:hover {
+  border-color: #00d1ff; /* Highlight color on hover */
+}
+
+.feature-card h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  font-size: 14px;
+  color: #BFBFBF; /* Light gray text */
+  margin-bottom: 20px;
+}
+
+.feature-card .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  background-color: #00d1ff; /* Light blue */
+  color: #FFFFFF;
+  transition: background-color 0.3s ease;
+}
+
+.feature-card .btn:hover {
+  background-color: #00FF8C; /* Green on hover */
+}
