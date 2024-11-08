@@ -205,21 +205,16 @@ border-image-source: linear-gradient(180deg, #1EE981 0%, #0E92CA 71.61%);
   padding: 20px;
   text-align: center;
   width: 290px;
-  height: 360px;
+  height: 320px;
   transition: border 0.3s ease;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  position: relative;
+  justify-content: space-between;
 }
 
 .feature-card img {
-  width: 63px;
+  width: 30px;
   margin-bottom: 20px;
-  position: absolute;
-  top: -35px;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
 
@@ -491,18 +486,5 @@ section h2 {
 .footer .disclaimer {
   font-size: 0.75rem;
   color: #a1a1a3;
-
-  width: 75%;
-}
-
-.footer-end {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-
-  
-}
-
-.social-icons {
-  width:25%;
+  margin-top: 1rem;
 }

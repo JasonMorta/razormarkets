@@ -491,18 +491,11 @@ section h2 {
 .footer .disclaimer {
   font-size: 0.75rem;
   color: #a1a1a3;
-
-  width: 75%;
+  margin-top: 1rem;
 }
 
 .footer-end {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-
-  
-}
-
-.social-icons {
-  width:25%;
 }

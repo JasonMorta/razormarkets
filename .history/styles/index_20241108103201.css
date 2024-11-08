@@ -209,7 +209,7 @@ border-image-source: linear-gradient(180deg, #1EE981 0%, #0E92CA 71.61%);
   transition: border 0.3s ease;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   position: relative;
 }
 
@@ -491,18 +491,5 @@ section h2 {
 .footer .disclaimer {
   font-size: 0.75rem;
   color: #a1a1a3;
-
-  width: 75%;
-}
-
-.footer-end {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-
-  
-}
-
-.social-icons {
-  width:25%;
+  margin-top: 1rem;
 }
