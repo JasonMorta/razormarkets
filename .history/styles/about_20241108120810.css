@@ -115,7 +115,7 @@
   border-radius: 20px;
   display: flex;
   align-items: center;
-  min-width: 325px;
+  min-width: 200px;
   border: 1px solid #D9D9D94D;
   backdrop-filter: blur(20px);
   background: #D9D9D94D;

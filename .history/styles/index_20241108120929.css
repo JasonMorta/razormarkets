@@ -293,37 +293,18 @@ border-image-source: linear-gradient(180deg, #1EE981 0%, #0E92CA 71.61%);
   margin: 10px;
 }
 
-
+.hero-image-container img {
+  width: 100%;
+  position: absolute;
+  transform: translate(18%, 0%) scale(1.3);
+}
 
 .hero-image-inner {
   height: 100%;
   width: 50%;
   right: 0;
-  top: -35px;
+  top: 15px;
   position: relative;
-}
-
-.pie-img {
-  width: 100%;
-  position: absolute;
-  transform: translate(18%, 0%) scale(1.3);
-  animation: float 3s ease-in-out infinite;
-}
-
-
-@keyframes float {
-  0% {
-  
-      transform: translate(18%, 0%);
-  }
-  50% {
-      
-      transform: translate(18%, -5px);
-  }
-  100% {
-  
-      transform:translate(18%, 0%);
-  }
 }
 
 .hero-image-text-content {
@@ -378,7 +359,7 @@ section h2 {
   font-weight: 700;
   position: absolute;
   left: 0;
-  top: -100px;
+  top: -80px;
 
 }
 

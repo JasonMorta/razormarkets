@@ -12,8 +12,8 @@
 }
 html {
   background-color: #171A20; 
-
-  border: 2px solid red;
+  width: fit-content;
+    border: 2px solid white;
 }
 
 body {
@@ -21,7 +21,7 @@ body {
   background-color: #171A20; /* Dark background */
   color: #FFFFFF; /* Light text */
   line-height: 1.6;
-  overflow: hidden;
+
 
 }
 
@@ -88,18 +88,6 @@ section {
 
 }
 
-section h1 {
-  /* font-size: 5rem; */
-  font-size: clamp(2rem, 6dvw, 5rem) !important;
-  font-weight: bold;
-  text-align: center;
-  line-height: 1.3;
-  margin-bottom: 20px;
-  color: #FFFFFF;
-}
-
-
-
 .auth-buttons {
   display: flex;
   gap: 10px;
@@ -139,7 +127,7 @@ section h1 {
 }
 
 .hero h1 {
-  /* font-size: 5rem; */
+  font-size: 5rem;
   font-weight: bold;
   line-height: 1;
   margin: auto;
@@ -198,13 +186,11 @@ border-image-source: linear-gradient(180deg, #1EE981 0%, #0E92CA 71.61%);
 .features {
   display: flex;
   justify-content: space-evenly;
-  gap: 40px;
+  gap: 20px;
   padding: 40px 20px;
   background-color: #171A20;
-  /* width: 75%; */
-  margin: auto;
-  flex-direction: row;
-  flex-wrap: wrap;
+  width: 75%;
+    margin: auto;
 }
 
 .card-bg {
@@ -286,61 +272,36 @@ border-image-source: linear-gradient(180deg, #1EE981 0%, #0E92CA 71.61%);
   justify-content: flex-start;
   align-items: center;
   padding: 40px 20px;
+  width: 100%;
   background: linear-gradient(117.19deg, #3AB8DB 30.38%, #1EE981 51.95%);
-  width: fit-content;
+  width: 940px;
   border-radius: 30px;
   height: 425px;
-  margin: 10px;
 }
-
-
 
 .hero-image-inner {
   height: 100%;
   width: 50%;
   right: 0;
-  top: -35px;
+  top: 15px;
   position: relative;
 }
 
-.pie-img {
+.hero-image-container img {
   width: 100%;
   position: absolute;
   transform: translate(18%, 0%) scale(1.3);
-  animation: float 3s ease-in-out infinite;
 }
 
-
-@keyframes float {
-  0% {
-  
-      transform: translate(18%, 0%);
-  }
-  50% {
-      
-      transform: translate(18%, -5px);
-  }
-  100% {
-  
-      transform:translate(18%, 0%);
-  }
-}
-
-.hero-image-text-content {
+.text-content {
   width: 50%;
-}
-
-@media (max-width: 650px) {
-  .hero-image-text-content h1 {
-    font-size: 2rem !important;
-  }
 }
 
 h1 {
   color: #FFFFFF !important;
   
 }
-.hero-image-text-content p {
+.text-content p {
   margin-bottom:20px ;
 }
 
@@ -353,6 +314,16 @@ h1 {
   background-color: #171A20; /* Dark background */
 }
 
+.section-7 h1 {
+  font-size: 5rem !important;
+    font-weight: bold;
+    line-height: 1;
+    margin: auto;
+    width: 70%;
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
 
 section h2 {
   font-size: 2rem;
@@ -378,7 +349,7 @@ section h2 {
   font-weight: 700;
   position: absolute;
   left: 0;
-  top: -100px;
+  top: -80px;
 
 }
 
