@@ -21,7 +21,7 @@ body {
 }
 
 .header-content {
-  max-width: 1440px;
+  max-width: 1000px;
   display: flex;
   justify-content: space-between;
   margin: auto;
@@ -64,7 +64,7 @@ nav a {
 }
 
 nav li a:hover {
-  color: #00d1ff;
+  color: #00d1ff; /* Light blue on hover */
 
 } 
 
@@ -93,14 +93,13 @@ section {
   text-align: center  ;
 }
 
-.signup, .is-info {
+.signup {
   background: #3AB8DB;
-  color: #FFFFFF;
 
   color: #FFFFFF;
 }
 
-.login, .is-success {
+.login {
   color: #FFFFFF;
   background: #1FD176;
 }
@@ -277,7 +276,6 @@ border-image-source: linear-gradient(180deg, #1EE981 0%, #0E92CA 71.61%);
 
 h1 {
   color: #FFFFFF !important;
-  
 }
 .text-content p {
   margin-bottom:20px ;

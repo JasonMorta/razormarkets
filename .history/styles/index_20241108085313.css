@@ -21,7 +21,7 @@ body {
 }
 
 .header-content {
-  max-width: 1440px;
+  max-width: 1000px;
   display: flex;
   justify-content: space-between;
   margin: auto;
@@ -64,7 +64,7 @@ nav a {
 }
 
 nav li a:hover {
-  color: #00d1ff;
+  color: #00d1ff; /* Light blue on hover */
 
 } 
 
@@ -100,7 +100,7 @@ section {
   color: #FFFFFF;
 }
 
-.login, .is-success {
+.login {
   color: #FFFFFF;
   background: #1FD176;
 }

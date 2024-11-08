@@ -1,0 +1,148 @@
+.trade-section {
+  background-color: #171A20;
+  color: #ffffff;
+  /* padding: 4rem 1.5rem; */
+  padding: 3.75rem 1.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1440px;
+  flex-direction: row;
+}
+.trade-section .content {
+  max-width: 765px;
+}
+
+.trade-section h1 {
+  font-size: 5rem;
+  font-weight: bold;
+}
+.trade-section p {
+  margin-top: 1rem;
+  color: #b1b1b3;
+}
+.trade-section .buttons {
+  margin-top: 1.5rem;
+}
+.trade-section .button {
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+}
+.button.is-learn-more {
+  background-color: #23d160; /* Green */
+  color: #ffffff;
+}
+.button.is-sign-up {
+  background-color: #3273dc; /* Blue */
+  color: #ffffff;
+}
+.info-badges {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  position: relative;
+}
+.info-badge {
+  background-color: #3c3c3f;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  font-size: 0.875rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.info-badge i {
+  margin-right: 0.5rem;
+}
+.info-badges .badge1 {
+  top: -2rem;
+  left: 2rem;
+}
+.info-badges .badge2 {
+  top: 2rem;
+  left: 4rem;
+}
+.info-badges .badge3 {
+  top: 5rem;
+  left: 1rem;
+}
+.shield-icon {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  background: url('https://via.placeholder.com/150') no-repeat center center;
+  background-size: contain;
+}
+
+
+.feature-section {
+  background-color: #171A20;
+  color: #ffffff;
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+/* Feature badge container */
+.feature-badges {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Each badge styling */
+.feature-badge {
+
+  padding: 10px 10px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  min-width: 200px;
+  border: 1px solid #D9D9D94D;
+  backdrop-filter: blur(20px);
+  background: #D9D9D94D;
+  height: 80px;
+}
+
+/* Icon inside badge */
+.feature-badge img {
+  border-radius: 50%;
+  padding: 0.5rem;
+  color: #ffffff;
+  margin-right: 1rem;
+  width: 70px
+}
+
+/* Text in each badge */
+.feature-badge-text {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* Paragraph styling */
+.feature-description {
+  color: #b1b1b3;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Button styling */
+.buttons .button {
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+}
+.button.is-learn-more {
+  background-color: #23d160; /* Green */
+  color: #ffffff;
+}
+.button.is-sign-up {
+  background-color: #3273dc; /* Blue */
+  color: #ffffff;
+}
