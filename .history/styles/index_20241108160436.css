@@ -400,10 +400,6 @@ section h2 {
   margin-top: 50px;
 }
 
-.faq-inner-accordion {
-  
-}
-
 .faq-inner h1, .faq-inner-accordion h1 {
   color: white;
   font-size: 3rem;
@@ -538,10 +534,6 @@ section h2 {
 /* ACCORDION SECTION */
 .faq-accordion  {
   width: 80%;
-}
-
-.ui-state-active {
-  border: 1px solid #1fd176 !important;
 }
 
 @media (max-width: 1040px) {

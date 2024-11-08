@@ -541,7 +541,7 @@ section h2 {
 }
 
 .ui-state-active {
-  border: 1px solid #1fd176 !important;
+  border: 1px solid #1fd176;
 }
 
 @media (max-width: 1040px) {

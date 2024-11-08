@@ -540,10 +540,6 @@ section h2 {
   width: 80%;
 }
 
-.ui-state-active {
-  border: 1px solid #1fd176 !important;
-}
-
 @media (max-width: 1040px) {
   .faq-container {
       display: none;

@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Razor Markets</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+  <link rel="stylesheet" href="styles/index.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <!-- <div class="header-content">
+     
+      <nav>
+        <ul>
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="./pages/about.html">About</a></li>
+          <li><a href="#account-types">Account Types</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="auth-buttons">
+          <a href="#signup"><button class="button is-info signup">Sign Up</button></a>
+          <a href="#login"><button class="button is-success login">Login</button></a>
+        </div>
+      </nav>
+      
+    </div> -->
+  </header>
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item navbar-item-logo" href="#">
+        <svg width="236" height="90" viewBox="0 0 236 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M93.5605 39.4151V15.5405H103.867C105.642 15.5405 107.189 15.8643 108.52 16.5058C109.851 17.1534 110.882 18.0767 111.619 19.2938C112.357 20.5049 112.729 21.9618 112.729 23.6526C112.729 25.3434 112.351 26.8063 111.589 27.9755C110.828 29.1446 109.773 30.032 108.406 30.6315C107.039 31.2311 105.45 31.5309 103.633 31.5309H97.4757V26.4945H102.326C103.088 26.4945 103.741 26.3986 104.281 26.2068C104.82 26.0149 105.234 25.7091 105.528 25.2894C105.822 24.8697 105.966 24.3241 105.966 23.6466C105.966 22.9691 105.822 22.4055 105.528 21.9738C105.234 21.5422 104.82 21.2244 104.281 21.0205C103.741 20.8167 103.088 20.7148 102.326 20.7148H100.042V39.4151H93.5605ZM107.548 28.4551L113.52 39.4151H106.481L100.653 28.4551H107.554H107.548Z" fill="white"/>
+          <path d="M128.239 39.4151H121.242L129.12 15.5405H137.982L145.86 39.4151H138.863L133.641 22.1177H133.455L128.233 39.4151H128.239ZM126.932 29.996H140.08V34.8465H126.932V29.996Z" fill="white"/>
+          <path d="M154.805 39.4151V35.8237L166.088 20.7627H154.853V15.5405H174.344V19.1319L163.061 34.1929H174.296V39.4151H154.805Z" fill="white"/>
+          <path d="M206.092 27.4779C206.092 30.1339 205.577 32.3763 204.539 34.199C203.508 36.0216 202.111 37.4006 200.354 38.3359C198.598 39.2713 196.637 39.7389 194.479 39.7389C192.32 39.7389 190.336 39.2653 188.585 38.324C186.834 37.3826 185.443 35.9977 184.412 34.175C183.381 32.3523 182.865 30.1219 182.865 27.4779C182.865 24.8338 183.381 22.5794 184.412 20.7568C185.443 18.9341 186.834 17.5551 188.585 16.6198C190.336 15.6845 192.302 15.2168 194.479 15.2168C196.655 15.2168 198.598 15.6845 200.354 16.6198C202.111 17.5551 203.508 18.9341 204.539 20.7568C205.571 22.5794 206.092 24.8218 206.092 27.4779ZM199.425 27.4779C199.425 26.0509 199.239 24.8398 198.862 23.8565C198.484 22.8732 197.932 22.1298 197.195 21.6201C196.463 21.1105 195.558 20.8587 194.485 20.8587C193.412 20.8587 192.506 21.1105 191.775 21.6201C191.043 22.1298 190.486 22.8732 190.108 23.8565C189.73 24.8398 189.544 26.0449 189.544 27.4779C189.544 28.9108 189.73 30.1159 190.108 31.0992C190.486 32.0825 191.043 32.826 191.775 33.3356C192.506 33.8452 193.412 34.097 194.485 34.097C195.558 34.097 196.457 33.8452 197.195 33.3356C197.932 32.826 198.484 32.0825 198.862 31.0992C199.239 30.1159 199.425 28.9108 199.425 27.4779Z" fill="white"/>
+          <path d="M215.639 39.4151V15.5405H225.945C227.72 15.5405 229.267 15.8643 230.598 16.5058C231.929 17.1534 232.96 18.0767 233.698 19.2938C234.435 20.5049 234.807 21.9618 234.807 23.6526C234.807 25.3434 234.429 26.8063 233.668 27.9755C232.906 29.1446 231.851 30.032 230.484 30.6315C229.123 31.2311 227.528 31.5309 225.711 31.5309H219.554V26.4945H224.404C225.166 26.4945 225.819 26.3986 226.359 26.2068C226.898 26.0149 227.312 25.7091 227.606 25.2894C227.9 24.8697 228.044 24.3241 228.044 23.6466C228.044 22.9691 227.9 22.4055 227.606 21.9738C227.312 21.5422 226.898 21.2244 226.359 21.0205C225.819 20.8167 225.166 20.7148 224.404 20.7148H222.12V39.4151H215.639ZM229.626 28.4551L235.598 39.4151H228.559L222.731 28.4551H229.632H229.626Z" fill="white"/>
+          <path d="M94.4121 47.5693H98.8789L101.955 55.0579H102.11L105.186 47.5693H109.653V60.7957H106.14V53.1513H106.038L103.094 60.6938H100.977L98.0335 53.0973H97.9315V60.7957H94.4181V47.5693H94.4121Z" fill="white"/>
+          <path d="M123.209 60.7957H119.336L123.701 47.5693H128.611L132.976 60.7957H129.103L126.207 51.2147H126.105L123.209 60.7957ZM122.49 55.5795H129.774V58.2655H122.49V55.5795Z" fill="white"/>
+          <path d="M142.658 60.7957V47.5693H148.366C149.349 47.5693 150.207 47.7492 150.944 48.103C151.682 48.4627 152.251 48.9723 152.665 49.6438C153.073 50.3153 153.276 51.1188 153.276 52.0601C153.276 53.0014 153.067 53.8048 152.647 54.4583C152.227 55.1058 151.64 55.5975 150.884 55.9332C150.129 56.263 149.247 56.4309 148.24 56.4309H144.829V53.6429H147.515C147.934 53.6429 148.294 53.589 148.594 53.487C148.894 53.3791 149.121 53.2112 149.283 52.9774C149.445 52.7436 149.523 52.4438 149.523 52.0661C149.523 51.6883 149.445 51.3766 149.283 51.1427C149.121 50.9029 148.894 50.729 148.594 50.6151C148.294 50.5012 147.934 50.4412 147.515 50.4412H146.25V60.8017H142.658V60.7957ZM150.405 54.7281L153.708 60.7957H149.805L146.579 54.7281H150.405Z" fill="white"/>
+          <path d="M163.217 60.7957V47.5693H166.808V52.9174H166.988L170.963 47.5693H175.148L170.681 53.457L175.25 60.7897H170.963L167.995 55.8313L166.808 57.3782V60.7897H163.217V60.7957Z" fill="white"/>
+          <path d="M184.627 60.7957V47.5693H194.16V50.4652H188.218V52.7376H193.668V55.6335H188.218V57.9058H194.136V60.8017H184.633L184.627 60.7957Z" fill="white"/>
+          <path d="M204 50.4652V47.5693H215.494V50.4652H211.519V60.7957H207.981V50.4652H204.006H204Z" fill="white"/>
+          <path d="M232.383 51.7064C232.347 51.2747 232.191 50.9389 231.903 50.6991C231.615 50.4593 231.183 50.3394 230.602 50.3394C230.23 50.3394 229.93 50.3813 229.696 50.4713C229.463 50.5612 229.289 50.6811 229.175 50.831C229.061 50.9809 229.007 51.1548 229.001 51.3466C228.995 51.5085 229.019 51.6464 229.091 51.7783C229.163 51.9102 229.265 52.0182 229.409 52.1201C229.553 52.222 229.744 52.3119 229.972 52.3959C230.2 52.4798 230.47 52.5518 230.788 52.6177L231.873 52.8515C232.604 53.0074 233.234 53.2113 233.75 53.4631C234.271 53.7149 234.697 54.0147 235.027 54.3565C235.356 54.6982 235.602 55.0819 235.758 55.5076C235.914 55.9333 235.998 56.401 235.998 56.9046C235.998 57.774 235.776 58.5114 235.344 59.111C234.913 59.7105 234.301 60.1722 233.504 60.484C232.706 60.7958 231.747 60.9576 230.626 60.9576C229.505 60.9576 228.473 60.7898 227.622 60.448C226.765 60.1063 226.105 59.5846 225.631 58.8772C225.158 58.1697 224.924 57.2643 224.918 56.1551H228.329C228.353 56.5628 228.455 56.8986 228.635 57.1744C228.815 57.4502 229.073 57.66 229.403 57.7979C229.732 57.9418 230.122 58.0138 230.578 58.0138C230.962 58.0138 231.279 57.9658 231.543 57.8699C231.801 57.774 231.999 57.6421 232.131 57.4742C232.263 57.3063 232.335 57.1144 232.335 56.8986C232.335 56.6947 232.263 56.5209 232.137 56.365C232.011 56.2091 231.801 56.0772 231.513 55.9513C231.225 55.8314 230.836 55.7115 230.344 55.6035L229.025 55.3217C227.856 55.0699 226.932 54.6442 226.261 54.0447C225.589 53.4451 225.254 52.6357 225.26 51.5985C225.26 50.7591 225.482 50.0216 225.931 49.3921C226.381 48.7625 227.016 48.2709 227.826 47.9171C228.635 47.5634 229.559 47.3895 230.608 47.3895C231.657 47.3895 232.598 47.5694 233.378 47.9231C234.157 48.2829 234.757 48.7805 235.182 49.428C235.608 50.0756 235.818 50.831 235.824 51.7004H232.389L232.383 51.7064Z" fill="white"/>
+          <path d="M69.772 87.866L69.3523 88.2917L36.1425 55.4176L35.8727 55.1478L35.5369 54.8181L35.2731 54.5543L16.0392 35.5181L15.4336 34.9186H16.285L16.8905 35.5181L35.2731 53.7149L35.8727 54.3084L36.3883 54.8181L36.9939 55.4176L69.772 87.866Z" fill="#3AB9DC"/>
+          <path d="M69.3641 89.9885L12.5195 33.7195H16.7764L71.4686 87.854L69.3641 89.9885Z" fill="#3AB9DC"/>
+          <path d="M80.2575 80.6893H40.5185L0 40.5845V40.4706H19.9355H39.8709L40.5724 41.1721L41.172 41.7656L80.2575 80.6893Z" fill="#3AB8DB"/>
+          <path d="M81.0431 19.9355C81.0431 30.9315 72.0976 39.8709 61.1077 39.8709H40.117L0.078125 0H61.1077C72.0976 0 81.0431 8.94548 81.0431 19.9355Z" fill="#1FD176"/>
+          </svg>
+          
+      </a>
+  
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+  
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item active" href="#">
+          Home
+        </a>
+  
+        <a class="navbar-item" href="./pages/about.html">
+          About
+        </a>
+        <a class="navbar-item">
+          Account Types
+        </a>
+        <a class="navbar-item">
+          Contact
+        </a>
+  
+        <!-- <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            More
+          </a>
+  
+          <div class="navbar-dropdown">
+            <a class="navbar-item">
+              About
+            </a>
+            <a class="navbar-item is-selected">
+              Jobs
+            </a>
+            <a class="navbar-item">
+              Contact
+            </a>
+            <hr class="navbar-divider">
+            <a class="navbar-item">
+              Report an issue
+            </a>
+          </div>
+        </div> -->
+      </div>
+  
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+            <div class="auth-buttons">
+              <a href="#signup"><button class="button is-info signup">Sign Up</button></a>
+              <a href="#login"><button class="button is-success login">Login</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <section class="hero section-1">
+      <h1>Navigate the Markets with Confidence</h1>
+      <p>Lorem ipsum dolor sit amet consectetur. Pellentesque vitae est ornare dignissim. Egestas augue ut sed ultrices
+        sed cursus.</p>
+      <div class="cta-buttons">
+        <a href="#signup"> <button class="button is-info signup" class="button">Sign Up</button></a>
+        <a href="#login"><button class="button is-success login">Lear More</button></a>
+      </div>
+    </section>
+
+    <section class="svg-section section 2">
+      <div class="wave-svg">
+        <img src="./assets/svg/line_wave.svg" alt="Wave SVG">
+      </div>
+    </section>
+
+    <section class="section-3">
+      <div class="features">
+        <div class="card-bg">
+          <div class="feature-card">
+            <h2>Fast Withdrawals</h2>
+            <p>Lorem ipsum dolor sit amet consectetur. Pellentesque vitae est ornare dignissim. Egestas augue ut sed
+              ultrices sed cursus.</p>
+            <a href="#signup"> <button class="button is-info signup" class="button">Sign Up</button></a>
+          </div>
+        </div>
+
+        <div class="card-bg">
+          <div class="feature-card">
+            <h2>1:1000 Leverage</h2>
+            <p>Lorem ipsum dolor sit amet consectetur. Pellentesque vitae est ornare dignissim. Egestas augue ut sed
+              ultrices sed cursus.</p>
+            <a href="#signup"> <button class="button is-success signup" class="button">Sign Up</button></a>
+          </div>
+        </div>
+        <div class="card-bg">
+          <div class="feature-card">
+            <h2>200% Bonus Account</h2>
+            <p>Lorem ipsum dolor sit amet consectetur. Pellentesque vitae est ornare dignissim. Egestas augue ut sed
+              ultrices sed cursus.</p>
+            <a href="#signup"> <button class="button is-success signup" class="button">Sign Up</button></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-4">
+      <div class="hero-image-container">
+        <div class="hero-image-text-content">
+          <h1 class="title is-1">Sharpen Your Trading Edge!</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur. Pellentesque vitae est ornare dignissim. Egestas augue ut sed
+            ultrices sed cursus.
+          </p>
+          <a href="#login"><button class="button is-success login">Sign Up</button></a>
+        </div>
+        <div data-tilt class="hero-image-inner">
+
+          <img class="pie-img" src="./assets/svg/pie-image.svg" alt="pie-image">
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="svg-section section-5">
+      <div class="wave-svg">
+        <img src="./assets/svg/line_wave2.svg" alt="Wave SVG">
+      </div>
+
+    </section>
+
+    <!-- Featured cards-->
+    <section class="section-7">
+      <h1 class="title is-1">Why choose Razor Markets</h1>
+      <div class="features">
+        <div class="card-bg">
+          <div class="feature-card">
+            <img src="./assets/svg/screen-share.svg" alt="feature1">
+            <h2>Cutting-Edge Tools</h2>
+            <p>Lorem ipsum dolor sit amet consectetur. Pellentesque vitae est ornare dignissim. Egestas augue ut sed
+              ultrices sed cursus.</p>
+            <a href="#signup"> <button class="button is-info signup" class="button">Sign Up</button></a>
+          </div>
+        </div>
+
+        <div class="card-bg">
+          <div class="feature-card">
+            <img src="./assets/svg/market-stat.svg" alt="feature1">
+            <h2>Competitive Spreads & Fees</h2>
+            <p>Lorem ipsum dolor sit amet consectetur. Pellentesque vitae est ornare dignissim. Egestas augue ut sed
+              ultrices sed cursus.</p>
+            <a href="#signup"> <button class="button is-success login" class="button">Sign Up</button></a>
+          </div>
+        </div>
+        <div class="card-bg">
+          <div class="feature-card">
+            <img src="./assets/svg/plus.svg" alt="feature1">
+            <h2>Trusted & Secure:</h2>
+            <p>Lorem ipsum dolor sit amet consectetur. Pellentesque vitae est ornare dignissim. Egestas augue ut sed
+              ultrices sed cursus.</p>
+            <a href="#signup"> <button class="button is-success signup" class="button">Sign Up</button></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQs -->
+    <section class="section-6">
+      <div class="faq-inner">
+        <div class="faq-container">
+          <h1>FAQs</h1>
+          <div class="faq-list">
+            <div class="faq-item active" data-answer="answer1">
+              <div class="list-text">
+                <span class="circle">
+                  <svg width="15" height="15" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle class="circle-dot" cx="12" cy="12" r="12" fill="#0E92CA" />
+                  </svg>
+                </span>
+                <span class="faq-text">What is Razor Markets?</span>
+              </div>
+              <div class="arrow-container">
+                <span class="arrow">&#8250;</span>
+              </div>
+            </div>
+            <div class="faq-item" data-answer="answer2">
+              <div class="list-text">
+                <span class="circle">
+                  <svg width="15" height="15" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle class="circle-dot" cx="12" cy="12" r="12" fill="#0E92CA" />
+                  </svg>
+                </span>
+                <span class="faq-text">Do I need to pay to Razor Markets to open an account?</span>
+              </div>
+              <div class="arrow-container">
+                <span class="arrow">&#8250;</span>
+              </div>
+            </div>
+            <div class="faq-item" data-answer="answer3">
+              <div class="list-text">
+                <span class="circle">
+                  <svg width="15" height="15" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle class="circle-dot" cx="12" cy="12" r="12" fill="#0E92CA" />
+                  </svg>
+                </span>
+                <span class="faq-text">What payment gateways does Razor Markets support?</span>
+              </div>
+              <div class="arrow-container">
+                <span class="arrow">&#8250;</span>
+              </div>
+            </div>
+            <div class="faq-item" data-answer="answer4">
+              <div class="list-text">
+                <span class="circle">
+                  <svg width="15" height="15" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle class="circle-dot" cx="12" cy="12" r="12" fill="#0E92CA" />
+                  </svg>
+                </span>
+                <span class="faq-text">Does Razor Markets provide international payments support?</span>
+              </div>
+              <div class="arrow-container">
+                <span class="arrow">&#8250;</span>
+              </div>
+            </div>
+            <div class="faq-item" data-answer="answer5">
+              <div class="list-text">
+                <span class="circle">
+                  <svg width="15" height="15" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle class="circle-dot" cx="12" cy="12" r="12" fill="#0E92CA" />
+                  </svg>
+                </span>
+                <span class="faq-text">Is there any setup fee or annual maintenance fee that I need to pay
+                  regularly?</span>
+              </div>
+              <div class="arrow-container">
+                <span class="arrow">&#8250;</span>
+              </div>
+            </div>
+          </div>
+          <div class="faq-answer">
+            <div id="answer1" class="answer-content active">
+              <h2>Hello 1</h2>
+              <br>
+              <p>Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.</p>
+              <br>
+              <p>Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.</p>
+            </div>
+            <div id="answer2" class="answer-content">
+              <h2>Hello 2</h2>
+              <br>
+              <p>Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.</p>
+              <br>
+              <p>Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.</p>
+            </div>
+            <div id="answer3" class="answer-content">
+              <h2>Hello 3</h2>
+              <br>
+              <p>Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.</p>
+              <br>
+              <p>Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.</p>
+            </div>
+            <div id="answer4" class="answer-content">
+              <h2>Hello 4</h2>
+              <br>
+              <p>Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.</p>
+              <br>
+              <p>Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.</p>
+            </div>
+            <div id="answer5" class="answer-content">
+              <h2>Hello 5</h2>
+              <br>
+              <p>Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.</p>
+              <br>
+              <p>Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <section class="svg-section section-8">
+      <div class="wave-svg">
+        <img src="./assets/svg/line_wave.svg" alt="Wave SVG">
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="columns">
+
+          <!-- Logo and Social Media Icons -->
+          <div class="column is-3">
+            <figure class="image footer-logo">
+              <svg width="120" height="134" viewBox="0 0 120 134" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M103.365 130.175L102.743 130.806L53.5419 82.1023L53.1422 81.7026L52.6448 81.2141L52.2539 80.8232L23.7585 52.6209L22.8613 51.7327H24.1227L25.0198 52.6209L52.2539 79.5797L53.1422 80.4591L53.9061 81.2141L54.8032 82.1023L103.365 130.175Z"
+                  fill="#3AB9DC" />
+                <path d="M102.759 133.319L18.543 49.9561H24.8496L105.877 130.157L102.759 133.319Z" fill="#3AB9DC" />
+                <path
+                  d="M118.788 120H59.9708L0 59.5657V59.394H29.5062H59.0124L60.0506 60.4511L60.938 61.3456L118.788 120Z"
+                  fill="#3AB8DB" />
+                <path
+                  d="M120 29.697C120 46.0772 106.742 59.3939 90.4532 59.3939H59.3424L0 0H90.4532C106.742 0 120 13.3257 120 29.697Z"
+                  fill="#1FD176" />
+              </svg>
+            </figure>
+
+          </div>
+
+          <!-- Quick Links Section -->
+          <div class="column is-3">
+            <p class="footer-section-title">Quick Links</p>
+            <ul>
+              <li><a href="#">Start Trading</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Deposits and Withdrawals</a></li>
+              <li><a href="#">Legal Documents</a></li>
+            </ul>
+          </div>
+
+          <div class="column is-3">
+            <ul>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Account Types</a></li>
+              <li><a href="#">Support</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact Information Section -->
+          <div class="column is-3">
+            <p class="footer-section-title">Get in touch</p>
+            <p>support@razormarkets.com</p>
+            <p>+27 00 000 0000</p>
+            <p>+27 12 345 6789</p>
+            <p>Physical Addr: 123 ABC Street, Main Road, Cape Town</p>
+          </div>
+        </div>
+
+        <!-- Disclaimer Section -->
+        <hr>
+        <div class="footer-end">
+          <div class="social-icons">
+            <span class="icon">
+              <a href="#">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <mask id="mask0_756_1455" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0"
+                    width="14" height="14">
+                    <path d="M14 0H0V14H14V0Z" fill="white" />
+                  </mask>
+                  <g mask="url(#mask0_756_1455)">
+                    <path
+                      d="M8.3319 5.925L13.5437 0H12.3087L7.78327 5.14459L4.16883 0H0L5.46574 7.77954L0 13.9928H1.2351L6.01406 8.55995L9.83117 13.9928H14L8.3316 5.925H8.3319ZM6.64026 7.84808L6.08647 7.07341L1.68013 0.909309H3.57717L7.13314 5.88394L7.68693 6.6586L12.3093 13.1249H10.4122L6.64026 7.84837V7.84808Z"
+                      fill="white" />
+                  </g>
+                </svg>
+              </a>
+
+            </span>
+            <span class="icon">
+              <a href="#">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.33398 7.22214H6.11176V16.6666H3.33398V7.22214ZM4.71454 6.11103H4.69898C3.8701 6.11103 3.33398 5.49325 3.33398 4.72159C3.33398 3.93325 3.88676 3.33325 4.73065 3.33325C5.57565 3.33325 6.09621 3.93325 6.11176 4.72159C6.11176 5.4927 5.57565 6.11103 4.71454 6.11103ZM16.6673 16.6666H13.8895V11.6116C13.8895 10.3905 13.209 9.55714 12.1162 9.55714C11.2823 9.55714 10.8312 10.1194 10.6123 10.6627C10.5323 10.8571 10.5562 11.3949 10.5562 11.6666V16.6666H7.77843V7.22214H10.5562V8.67547C10.9568 8.05547 11.584 7.22214 13.1884 7.22214C15.1762 7.22214 16.6668 8.47214 16.6668 11.2633L16.6673 16.6666Z"
+                    fill="white" />
+                </svg>
+              </a>
+
+            </span>
+            <span class="icon">
+              <a href="#">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M14.6048 7.49989H11.6673V5.83322C11.6673 4.97322 11.7373 4.43156 12.9698 4.43156H14.5265V1.78156C13.769 1.70322 13.0073 1.66489 12.2448 1.66656C9.98398 1.66656 8.33398 3.04739 8.33398 5.58239V7.49989H5.83398V10.8332L8.33398 10.8324V18.3332H11.6673V10.8307L14.2223 10.8299L14.6048 7.49989Z"
+                    fill="white" />
+                </svg>
+              </a>
+
+            </span>
+            <span class="icon">
+              <a href="#">
+                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M6.46391 4.52477C5.94961 4.52477 5.45631 4.72907 5.09271 5.09267C4.72901 5.45637 4.52471 5.94957 4.52471 6.46387C4.52471 6.97817 4.72901 7.47147 5.09271 7.83507C5.45631 8.19877 5.94961 8.40307 6.46391 8.40307C6.97821 8.40307 7.47141 8.19877 7.83511 7.83507C8.19871 7.47147 8.40301 6.97817 8.40301 6.46387C8.40301 5.94957 8.19871 5.45637 7.83511 5.09267C7.47141 4.72907 6.97821 4.52477 6.46391 4.52477ZM6.46391 3.23197C7.32101 3.23197 8.14311 3.57247 8.74921 4.17857C9.35531 4.78467 9.69581 5.60677 9.69581 6.46387C9.69581 7.32107 9.35531 8.14307 8.74921 8.74917C8.14311 9.35537 7.32101 9.69587 6.46391 9.69587C5.60671 9.69587 4.78471 9.35537 4.17851 8.74917C3.57241 8.14307 3.23191 7.32107 3.23191 6.46387C3.23191 5.60677 3.57241 4.78467 4.17851 4.17857C4.78471 3.57247 5.60671 3.23197 6.46391 3.23197ZM10.6654 3.07037C10.6654 3.28467 10.5803 3.49017 10.4288 3.64167C10.2772 3.79317 10.0717 3.87837 9.85741 3.87837C9.64311 3.87837 9.43761 3.79317 9.28611 3.64167C9.13461 3.49017 9.04941 3.28467 9.04941 3.07037C9.04941 2.85607 9.13461 2.65057 9.28611 2.49897C9.43761 2.34747 9.64311 2.26237 9.85741 2.26237C10.0717 2.26237 10.2772 2.34747 10.4288 2.49897C10.5803 2.65057 10.6654 2.85607 10.6654 3.07037ZM6.46391 1.29277C4.86471 1.29277 4.60361 1.29727 3.85961 1.33027C3.35281 1.35417 3.01281 1.42207 2.69741 1.54487C2.41681 1.65347 2.21451 1.78337 1.99931 1.99927C1.79701 2.19477 1.64141 2.43337 1.54421 2.69737C1.42141 3.01407 1.35351 3.35347 1.33031 3.85957C1.29661 4.57317 1.29281 4.82267 1.29281 6.46387C1.29281 8.06307 1.29731 8.32417 1.33031 9.06817C1.35421 9.57427 1.42201 9.91497 1.54421 10.2298C1.65411 10.511 1.78341 10.7133 1.99801 10.9279C2.21581 11.1451 2.41811 11.275 2.69611 11.3823C3.01541 11.5058 3.35541 11.5743 3.85961 11.5975C4.57321 11.6312 4.82271 11.635 6.46391 11.635C8.06301 11.635 8.32421 11.6305 9.06821 11.5975C9.57371 11.5736 9.91431 11.5058 10.2297 11.3836C10.5096 11.2743 10.7132 11.1444 10.9278 10.9298C11.1457 10.712 11.2756 10.5097 11.3829 10.2317C11.5057 9.91297 11.5742 9.57237 11.5975 9.06817C11.6311 8.35457 11.635 8.10507 11.635 6.46387C11.635 4.86477 11.6305 4.60357 11.5975 3.85957C11.5736 3.35407 11.5057 3.01277 11.3829 2.69737C11.2855 2.43367 11.1302 2.19507 10.9285 1.99927C10.7331 1.79687 10.4944 1.64127 10.2304 1.54427C9.91371 1.42137 9.57371 1.35357 9.06821 1.33027C8.35461 1.29667 8.10511 1.29277 6.46391 1.29277ZM6.46391 0C8.22011 0 8.43921 0.00646021 9.12831 0.0387802C9.81671 0.0711002 10.2853 0.17905 10.6977 0.33935C11.1243 0.50354 11.4837 0.72589 11.8431 1.08467C12.1718 1.40777 12.4261 1.79867 12.5884 2.23007C12.7481 2.64177 12.8567 3.11107 12.889 3.79947C12.9194 4.48857 12.9278 4.70767 12.9278 6.46387C12.9278 8.22017 12.9213 8.43927 12.889 9.12827C12.8567 9.81667 12.7481 10.2854 12.5884 10.6978C12.4266 11.1294 12.1722 11.5204 11.8431 11.8432C11.5199 12.1717 11.1291 12.426 10.6977 12.5885C10.286 12.7481 9.81671 12.8567 9.12831 12.889C8.43921 12.9194 8.22011 12.9278 6.46391 12.9278C4.70761 12.9278 4.48851 12.9213 3.79951 12.889C3.11111 12.8567 2.64241 12.7481 2.23001 12.5885C1.79851 12.4265 1.40751 12.1721 1.08461 11.8432C0.75591 11.5201 0.50151 11.1292 0.33935 10.6978C0.17905 10.286 0.0710993 9.81667 0.0387793 9.12827C0.00839926 8.43927 0 8.22017 0 6.46387C0 4.70767 0.00645926 4.48857 0.0387793 3.79947C0.0710993 3.11047 0.17905 2.64247 0.33935 2.23007C0.50111 1.79837 0.75551 1.40737 1.08461 1.08467C1.40761 0.75578 1.79851 0.50142 2.23001 0.33935C2.64241 0.17905 3.11041 0.0711002 3.79951 0.0387802C4.48851 0.00840021 4.70761 0 6.46391 0Z"
+                    fill="white" />
+                </svg>
+              </a>
+
+            </span>
+            <span class="icon">
+              <a href="#">
+                <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M14.189 0.279041C14.0243 0.140683 13.825 0.049781 13.6126 0.016088C13.4001 -0.0176051 13.1825 0.00718259 12.9831 0.0877914L0.812142 4.95935C0.634724 5.03305 0.483118 5.15766 0.376464 5.31745C0.269811 5.47724 0.212891 5.66505 0.212891 5.85717C0.212891 6.04928 0.269811 6.23709 0.376464 6.39688C0.483118 6.55667 0.634724 6.68128 0.812142 6.75498L1.59839 7.07904C1.72803 7.13388 1.87413 7.13503 2.00461 7.08224C2.1351 7.02945 2.2393 6.92703 2.29433 6.79748C2.32133 6.73296 2.33532 6.66375 2.33551 6.59382C2.3357 6.52388 2.32207 6.45459 2.29542 6.38994C2.26876 6.32528 2.22961 6.26652 2.18019 6.21703C2.13078 6.16754 2.07207 6.12829 2.00745 6.10154L1.42308 5.86248L13.3815 1.08123C13.3999 1.06996 13.421 1.06399 13.4426 1.06399C13.4642 1.06399 13.4853 1.06996 13.5037 1.08123C13.521 1.09595 13.5341 1.11505 13.5416 1.13653C13.5491 1.15802 13.5507 1.18111 13.5462 1.20342L11.3628 11.3928C11.3556 11.4291 11.3391 11.4629 11.3149 11.4908C11.2906 11.5188 11.2595 11.5399 11.2246 11.5522C11.1904 11.5658 11.1531 11.57 11.1167 11.5644C11.0803 11.5588 11.046 11.5435 11.0175 11.5203L6.76745 8.20529L10.9271 4.0031C11.016 3.91091 11.0686 3.78973 11.0752 3.66185C11.0818 3.53398 11.042 3.40802 10.9631 3.30716C10.8842 3.2063 10.7716 3.13732 10.6459 3.11292C10.5202 3.08851 10.3899 3.11033 10.279 3.17435L4.18027 6.78685C4.11253 6.81747 4.05197 6.86196 4.00251 6.91744C3.95304 6.97293 3.91577 7.03818 3.8931 7.10897C3.87044 7.17977 3.86288 7.25453 3.87092 7.32843C3.87896 7.40233 3.90242 7.47371 3.93979 7.53798C3.97715 7.60224 4.02758 7.65795 4.08782 7.70149C4.14806 7.74504 4.21677 7.77547 4.28951 7.79079C4.36225 7.80612 4.43739 7.80601 4.51008 7.79048C4.58278 7.77494 4.6514 7.74432 4.71152 7.7006L7.27745 6.18654L6.02902 7.45623C5.91481 7.56354 5.82575 7.69478 5.76822 7.84056C5.7107 7.98633 5.68614 8.14303 5.69629 8.29941C5.70645 8.45579 5.75107 8.60799 5.82696 8.7451C5.90285 8.88222 6.00814 9.00084 6.13527 9.09248L10.3853 12.3597C10.609 12.5323 10.8836 12.6257 11.1662 12.6253C11.3167 12.6242 11.4658 12.5972 11.6071 12.5456C11.8101 12.4728 11.9909 12.349 12.1323 12.1862C12.2737 12.0234 12.3709 11.8271 12.4146 11.6159L14.5821 1.43717C14.6281 1.22663 14.6159 1.00752 14.5466 0.803451C14.4773 0.599379 14.3537 0.418068 14.189 0.279041Z"
+                    fill="white" />
+                </svg>
+              </a>
+
+            </span>
+          </div>
+          <p class="disclaimer">
+            Disclaimer: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a,
+            mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus
+            elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad
+            litora torquent per conubia.
+          </p>
+        </div>
+      </div>
+
+    </footer>
+    <section class="section-8">
+      <a href="#" >
+        <div class="back-to-top">
+          <svg width="64px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+            stroke="#bf3636">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <circle opacity="0.5" cx="12" cy="12" r="10" stroke="#4f8cba" stroke-width="1.5"></circle>
+              <path d="M12 16L12 8M12 8L15 11M12 8L9 11" stroke="#4f8cba" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round"></path>
+            </g>
+          </svg>
+        </div>
+      </a>
+    </section>
+  </main>
+  <script src="./scripts/index.js"></script>
+  <script src="./scripts/tilt.js"></script>
+
+</body>
+
+</html>

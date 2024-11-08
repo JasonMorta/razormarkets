@@ -401,7 +401,7 @@ section h2 {
 }
 
 .faq-inner-accordion {
-  
+
 }
 
 .faq-inner h1, .faq-inner-accordion h1 {
@@ -540,24 +540,20 @@ section h2 {
   width: 80%;
 }
 
-.ui-state-active {
-  border: 1px solid #1fd176 !important;
-}
-
 @media (max-width: 1040px) {
-  .faq-container {
+  .faq-inner-accordion {
       display: none;
   }
-  .faq-accordion {
+  .faq-inner-accordion {
       display: block;
   }
 }
 
 @media (min-width: 1041px) {
-  .faq-container {
+  .faq-inner-accordion {
       display: flex;
   }
-  .faq-accordion {
+  .faq-inner-accordionn {
       display: none;
   }
 }
