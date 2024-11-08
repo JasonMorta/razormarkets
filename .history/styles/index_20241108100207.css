@@ -27,8 +27,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
-  background-color: #30313A; /* Header background */'
-  width: 100%;
+  background-color: #30313A; /* Header background */
 }
 .header-content {
   max-width: 1440px;
