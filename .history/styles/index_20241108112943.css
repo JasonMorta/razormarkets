@@ -513,14 +513,9 @@ section h2 {
   width:25%;
 }
 
-.show-btt {
-  display: block !important;
-}
-
 .back-to-top {
   position: fixed;
   bottom: 20px;
-  display: none;
   right: 70px;
   cursor: pointer;
   transition: transform 0.3s ease;
@@ -530,3 +525,4 @@ section h2 {
   transform: translateY(-5px);
   transition: transform 0.3s ease;
 }
+

@@ -513,20 +513,38 @@ section h2 {
   width:25%;
 }
 
-.show-btt {
-  display: block !important;
+/* Back to Top Button Styles */
+#back-to-top {
+  position: fixed; /* Fixes the button relative to the viewport */
+  bottom: 40px;    /* Distance from the bottom */
+  right: 40px;     /* Distance from the right */
+  display: none;   /* Hidden by default */
+  z-index: 1000;   /* Ensures the button appears above other elements */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+  transition: opacity 0.3s ease, visibility 0.3s ease; /* Smooth transition */
 }
 
+/* Show the button when it has the 'show' class */
+#back-to-top.show {
+  display: block;
+}
+
+/* Optional: Hover Effects */
+#back-to-top:hover .back-to-top svg {
+  stroke: #00d1ff; /* Change SVG stroke color on hover */
+}
+
+/* Optional: Additional Styling for the Button Container */
 .back-to-top {
-  position: fixed;
-  bottom: 20px;
-  display: none;
-  right: 70px;
-  cursor: pointer;
-  transition: transform 0.3s ease;
+  width: 64px;
+  height: 64px;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  border-radius: 50%; /* Makes the container circular */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.back-to-top:hover {
-  transform: translateY(-5px);
-  transition: transform 0.3s ease;
+#back-to-top.show {
+  display: block;
 }

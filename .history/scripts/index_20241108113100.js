@@ -22,21 +22,26 @@
 
 
   // Select the Back to Top button
-  const backToTopButton = document.querySelector('.back-to-top');
-  console.log('backToTopButton', backToTopButton)
+  const backToTopButton = document.getElementById('back-to-top');
 
   // Function to toggle the visibility of the button
   function toggleBackToTopButton() {
     // Check the vertical scroll position
     if (window.scrollY > 200) { // If scrolled more than 200px
-      
-        
-      backToTopButton.classList.add('show-btt'); // Show the button
+      backToTopButton.classList.add('show'); // Show the button
     } else {
-      backToTopButton.classList.remove('show-btt'); // Hide the button
+      backToTopButton.classList.remove('show'); // Hide the button
     }
   }
 
-   // Listen for the scroll event
-   window.addEventListener('scroll', toggleBackToTopButton);
+  // Listen for the scroll event
+  window.addEventListener('scroll', toggleBackToTopButton);
 
+  // Optional: Smooth scroll to top when the button is clicked
+  backToTopButton.addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent default anchor behavior
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth' // Smooth scroll effect
+    });
+  });

@@ -513,10 +513,6 @@ section h2 {
   width:25%;
 }
 
-.show-btt {
-  display: block !important;
-}
-
 .back-to-top {
   position: fixed;
   bottom: 20px;

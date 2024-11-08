@@ -27,9 +27,10 @@
 
   // Function to toggle the visibility of the button
   function toggleBackToTopButton() {
+    console.log('window.scrollY', window.scrollY)
     // Check the vertical scroll position
     if (window.scrollY > 200) { // If scrolled more than 200px
-      
+        console.log('window.scrollY > 200)', window.scrollY > 200))
         
       backToTopButton.classList.add('show-btt'); // Show the button
     } else {

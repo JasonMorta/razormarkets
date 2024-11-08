@@ -8,7 +8,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 html {
   background-color: #171A20; 
@@ -20,11 +19,10 @@ body {
   color: #FFFFFF; /* Light text */
   line-height: 1.6;
 
-
 }
 
 
-/* Base Header Styles */
+/* Existing header styles */
 header {
   display: flex;
   justify-content: space-between;
@@ -65,15 +63,11 @@ nav a {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: larger;
-  transition: color 0.3s ease; /* Smooth color transition */
 }
 
-nav li a:hover,
-nav li a.active {
-  color: #00d1ff; /* Blue-ish color for hover and active */
+nav li a:hover {
+  color: #00d1ff; /* Default hover color */
 }
-
-
 
 
 section {
@@ -82,7 +76,6 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
 
 }
 
@@ -511,22 +504,4 @@ section h2 {
 
 .social-icons {
   width:25%;
-}
-
-.show-btt {
-  display: block !important;
-}
-
-.back-to-top {
-  position: fixed;
-  bottom: 20px;
-  display: none;
-  right: 70px;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
-
-.back-to-top:hover {
-  transform: translateY(-5px);
-  transition: transform 0.3s ease;
 }

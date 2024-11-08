@@ -514,7 +514,7 @@ section h2 {
 }
 
 .show-btt {
-  display: block !important;
+  display: block;
 }
 
 .back-to-top {
