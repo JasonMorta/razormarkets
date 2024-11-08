@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Code Generator</title>
+  <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+    }
+    input[type="text"], button {
+      padding: 10px;
+      margin: 5px;
+      width: calc(100% - 24px);
+      box-sizing: border-box;
+    }
+    #qrcodes img {
+      margin: 10px;
+      max-width: 200px;
+    }
+    .qr-container {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>QR Code Generator</h1>
+  <p>Enter URLs (one per line):</p>
+  <textarea id="urlsInput" rows="5" placeholder="Enter multiple URLs, each on a new line"></textarea>
+  <button onclick="generateQRCodes()">Generate QR Codes</button>
+  
+  <div id="qrcodes" class="qr-container"></div>
+
+  <script>
+    function generateQRCodes() {
+      // Clear previous QR codes
+      const qrContainer = document.getElementById('qrcodes');
+      qrContainer.innerHTML = '';
+
+      // Get URLs from the textarea
+      const urls = document.getElementById('urlsInput').value.split('\n').map(url => url.trim()).filter(url => url);
+
+      urls.forEach((url, index) => {
+        // Generate QR code as a PNG data URL
+        QRCode.toDataURL(url, { width: 200 }, (err, dataUrl) => {
+          if (err) {
+            console.error(err);
+            return;
+          }
+
+          // Create container for QR code and download link
+          const qrCodeContainer = document.createElement('div');
+
+          // Display QR code as an image
+          const img = document.createElement('img');
+          img.src = dataUrl;
+          qrCodeContainer.appendChild(img);
+
+          // Create a download link for the QR code as JPEG
+          const downloadLink = document.createElement('a');
+          downloadLink.href = dataUrl;
+          downloadLink.download = `QRCode_${index + 1}.jpg`;
+          downloadLink.textContent = `Download QR Code for ${url}`;
+          downloadLink.style.display = 'block';
+          downloadLink.style.marginTop = '10px';
+          qrCodeContainer.appendChild(downloadLink);
+
+          qrContainer.appendChild(qrCodeContainer);
+        });
+      });
+    }
+  </script>
+</body>
+</html>
