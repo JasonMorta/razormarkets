@@ -125,8 +125,24 @@
   background-color: #fff; 
 }
 
+.feature-card-account-types .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  background-color: #3AB8DB; 
+  color: #FFFFFF;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+  width: 100%;
+}
 
-
+.feature-card-account-types .btn:hover {
+  background-color: #00FF8C; /* Green on hover */
+}
 
 
 
@@ -171,9 +187,26 @@
   margin-top: 1rem;
   color: #b1b1b3;
 }
+.trade-section .buttons {
+  margin-top: 1.5rem;
+}
+.trade-section .button {
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+}
+.button.is-learn-more {
+  background-color: var(--primary-button-color) !important;
+  color: #ffffff;
+}
+.button.is-sign-up {
+  background-color: var(--secondary-button-color) !important;
+  color: #ffffff;
+}
 
-
-
+.signup:hover {
+  background-color: #00FF8C; /* Hover color */
+}
 
 .info-badges {
   display: flex;
