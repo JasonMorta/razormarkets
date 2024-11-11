@@ -15,7 +15,6 @@ const accountCards = [
     accountBaseCurrencies: ["ZAR", "USD", "GBP", "EUR"],
     orderExecution: "Market Execution",
     buttonText: "Sign Up",
-    buttonLink: "https://my.razormarkets.com/register",
     icon: "../assets/svg/bulb-market.svg"
   },
   {

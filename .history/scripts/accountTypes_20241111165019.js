@@ -15,7 +15,6 @@ const accountCards = [
     accountBaseCurrencies: ["ZAR", "USD", "GBP", "EUR"],
     orderExecution: "Market Execution",
     buttonText: "Sign Up",
-    buttonLink: "https://my.razormarkets.com/register",
     icon: "../assets/svg/bulb-market.svg"
   },
   {
@@ -34,7 +33,7 @@ const accountCards = [
     accountBaseCurrencies: ["ZAR", "USD", "GBP", "EUR"],
     orderExecution: "Market Execution",
     buttonText: "Sign Up",
-    buttonLink: "https://my.razormarkets.com/register",
+    buttonlink: "https://my.razormarkets.com/register",
     icon: "../assets/svg/bulb-market.svg"
   },
   {
@@ -53,7 +52,7 @@ const accountCards = [
     accountBaseCurrencies: ["ZAR", "USD", "GBP", "EUR"],
     orderExecution: "Market Execution",
     buttonText: "Sign Up",
-    buttonLink: "https://my.razormarkets.com/register",
+    buttonlink: "https://my.razormarkets.com/register",
     icon: "../assets/svg/bulb-market.svg"
   },
   {
@@ -72,7 +71,7 @@ const accountCards = [
     accountBaseCurrencies: ["ZAR", "USD", "GBP", "EUR"],
     orderExecution: "Market Execution",
     buttonText: "Sign Up",
-    buttonLink: "https://my.razormarkets.com/register",
+    buttonlink: "https://my.razormarkets.com/register",
     icon: "../assets/svg/bulb-market.svg"
   },
   {
@@ -91,7 +90,7 @@ const accountCards = [
     accountBaseCurrencies: ["ZAR", "USD", "GBP", "EUR"],
     orderExecution: "Market Execution",
     buttonText: "Sign Up",
-    buttonLink: "https://my.razormarkets.com/register",
+    buttonlink: "https://my.razormarkets.com/register",
     icon: "../assets/svg/bulb-market.svg"
   }, {
     name: "Razor Edge",
@@ -109,7 +108,7 @@ const accountCards = [
     accountBaseCurrencies: ["ZAR", "USD", "GBP", "EUR"],
     orderExecution: "Market Execution",
     buttonText: "Sign Up",
-    buttonLink: "https://my.razormarkets.com/register",
+    buttonlink: "https://my.razormarkets.com/register",
     icon: "../assets/svg/bulb-market.svg"
   },
   {
@@ -128,7 +127,7 @@ const accountCards = [
     accountBaseCurrencies: ["ZAR", "USD", "GBP", "EUR"],
     orderExecution: "Market Execution",
     buttonText: "Sign Up",
-    buttonLink: "https://my.razormarkets.com/register",
+    buttonlink: "https://my.razormarkets.com/register",
     icon: "../assets/svg/bulb-market.svg"
   }
 ];
@@ -160,7 +159,7 @@ accountCards.forEach(card => {
           <p><strong>Account Base Currencies:</strong> ${card.accountBaseCurrencies.join(", ")}</p>
           <p><strong>Order Execution:</strong> ${card.orderExecution}</p>
         </div>
-        <a href=${card.buttonLink} target="_blank"> <button class="button is-info signup">${card.buttonText}</button></a>
+        <a href="#signup"> <button class="button is-info signup">${card.buttonText}</button></a>
       </div>
     </div>
   `;
