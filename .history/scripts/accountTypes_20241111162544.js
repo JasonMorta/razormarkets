@@ -88,7 +88,7 @@ const accountCards = [
     orderExecution: "Market Execution",
     buttonText: "Sign Up",
     icon: "../assets/svg/bulb-market.svg"
-  }, {
+  },  {
     name: "Razor Edge",
     type: "Micro Account",
     platform: "MT4 & MT5",

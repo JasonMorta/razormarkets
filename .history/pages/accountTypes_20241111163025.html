@@ -6,8 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Razor Markets</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+  <link rel="stylesheet" href="../styles/accountTypes.css">
   <link rel="stylesheet" href="../styles/index.css">
-  <link rel="stylesheet" href="../styles/about.css">
+ 
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
   <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
@@ -36,10 +37,10 @@
             Home
           </a>
     
-          <a class="navbar-item active" href="#">
+          <a class="navbar-item active" href="/pages/about.html">
             About
           </a>
-          <a class="navbar-item" href="/pages/accountTypes.html">
+          <a class="navbar-item" href="#">
             Account Types
           </a>
           <a class="navbar-item" href="#">
@@ -51,7 +52,7 @@
           <div class="navbar-item">
             <div class="buttons">
               <div class="auth-buttons">
-                <a href="http://my.razormarkets.com/login" target="_blank"><button class="button is-info signup">Sign Up</button></a>
+                <a href="#signup"><button class="button is-info signup">Sign Up</button></a>
                 <a href="#login"><button class="button is-success login">Login</button></a>
               </div>
             </div>
@@ -62,7 +63,7 @@
   </header>
 
   <main>
-    <section class="trade-section section-1">
+    <section class="trade-section">
       <!-- Left Content -->
       <div class="content">
           <h1>Trade Securely with Razor Markets</h1>
@@ -171,84 +172,12 @@
       </div>
   </section>
 
- 
-
-    <section class="svg-section section-2">
-      <div class="wave-svg">
-       <img src="../assets/svg/Trading_waves_1.svg" alt="Wave SVG">
-      </div>
-    </section>
-
-    <section class="feature-section">
-      <!-- Feature Badges -->
-      <div class="feature-badges">
-          <div class="feature-badge">
-              <img src="../assets/svg/bulb.svg" alt="Feature Badge 1">
-              <span class="feature-badge-text">Innovative Trading Platform</span>
-          </div>
-          <div class="feature-badge">
-            <img src="../assets/svg/bulb.svg" alt="Feature Badge 1">
-              <span class="feature-badge-text">Education and Support</span>
-          </div>
-          <div class="feature-badge">
-            <img src="../assets/svg/bulb.svg" alt="Feature Badge 1">
-              <span class="feature-badge-text">Transparency and Security</span>
-          </div>
-      </div>
-
-      <!-- Description Paragraph -->
-      <p class="feature-description">
-          At Razor Markets, we strive to deliver a seamless trading experience, combining advanced technology with professional expertise. Our team of market analysts and seasoned traders work tirelessly to keep you informed with the latest market trends and insights, giving you the tools to sharpen your trading strategies.
-      </p>
-
-      <!-- Call-to-Action Buttons -->
-      <div class="buttons is-centered">
-        <a class="button is-learn-more is-info " href="#">Learn More</a>
-        <a class="button is-sign-up is-success" href="#">Sign Up</a>
-      </div>
-  </section>
-
-    <section class="svg-section section-5">
-      <div class="wave-svg">
-       <img src="../assets/svg/Trading_waves_reversed_1.svg" alt="Wave SVG">
-      </div>
   
-    </section>
-
-    <!-- Featured cards-->
-    <section class="section-7">
-      <h1 class="title is-1">Why choose Razor Markets</h1>
-        <div class="features">
-          <div class="card-bg">
-              <div class="feature-card">
-                <img src="../assets/svg/screen-share.svg" alt="feature1">
-                <h2>Cutting-Edge Tools</h2>
-                <p>Lorem ipsum dolor sit amet consectetur. Pellentesque vitae est ornare dignissim. Egestas augue ut sed
-                  ultrices sed cursus.</p>
-                  <a href="#signup"> <button class="button is-info signup" class="button">Sign Up</button></a>
-              </div>
-              </div>
-            
-           <div class="card-bg">
-              <div class="feature-card">
-                <img src="../assets/svg/market-stat.svg" alt="feature1">
-                <h2>Competitive Spreads & Fees</h2>
-                <p>Lorem ipsum dolor sit amet consectetur. Pellentesque vitae est ornare dignissim. Egestas augue ut sed
-                  ultrices sed cursus.</p>
-                  <a href="#signup"> <button class="button is-success login" class="button">Sign Up</button></a>
-              </div>
-           </div>
-            <div class="card-bg">
-              <div class="feature-card">
-                <img src="../assets/svg/plus.svg" alt="feature1">
-                <h2>Trusted & Secure:</h2>
-                <p>Lorem ipsum dolor sit amet consectetur. Pellentesque vitae est ornare dignissim. Egestas augue ut sed
-                  ultrices sed cursus.</p>
-                  <a href="#signup"> <button class="button is-success signup" class="button">Sign Up</button></a>
-              </div>
-            </div>
-         </div>
-    </section>
+<section class="section-3">
+  <div class="features" id="accountCardsContainer">
+    
+  </div>
+</section>
 
 
 
@@ -395,7 +324,7 @@
     </section>
   </main>
   <script src="../scripts/index.js"></script>
-
+  <script src="../scripts//accountTypes.js"></script>
 </body>
 
 </html>

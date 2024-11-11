@@ -32,7 +32,7 @@ const accountCards = [
     stopOut: "30%",
     accountBaseCurrencies: ["ZAR", "USD", "GBP", "EUR"],
     orderExecution: "Market Execution",
-    buttonText: "Sign Up",
+    buttonText: "Sign Up"
     icon: "../assets/svg/bulb-market.svg"
   },
   {
@@ -50,7 +50,7 @@ const accountCards = [
     stopOut: "30%",
     accountBaseCurrencies: ["ZAR", "USD", "GBP", "EUR"],
     orderExecution: "Market Execution",
-    buttonText: "Sign Up",
+    buttonText: "Sign Up"
     icon: "../assets/svg/bulb-market.svg"
   },
   {
@@ -68,7 +68,7 @@ const accountCards = [
     stopOut: "30%",
     accountBaseCurrencies: ["ZAR", "USD", "GBP", "EUR"],
     orderExecution: "Market Execution",
-    buttonText: "Sign Up",
+    buttonText: "Sign Up"
     icon: "../assets/svg/bulb-market.svg"
   },
   {
@@ -86,9 +86,9 @@ const accountCards = [
     stopOut: "30%",
     accountBaseCurrencies: ["ZAR", "USD", "GBP", "EUR"],
     orderExecution: "Market Execution",
-    buttonText: "Sign Up",
+    buttonText: "Sign Up"
     icon: "../assets/svg/bulb-market.svg"
-  }, {
+  },  {
     name: "Razor Edge",
     type: "Micro Account",
     platform: "MT4 & MT5",
@@ -103,7 +103,7 @@ const accountCards = [
     stopOut: "30%",
     accountBaseCurrencies: ["ZAR", "USD", "GBP", "EUR"],
     orderExecution: "Market Execution",
-    buttonText: "Sign Up",
+    buttonText: "Sign Up"
     icon: "../assets/svg/bulb-market.svg"
   },
   {
@@ -121,7 +121,7 @@ const accountCards = [
     stopOut: "30%",
     accountBaseCurrencies: ["ZAR", "USD", "GBP", "EUR"],
     orderExecution: "Market Execution",
-    buttonText: "Sign Up",
+    buttonText: "Sign Up"
     icon: "../assets/svg/bulb-market.svg"
   }
 ];

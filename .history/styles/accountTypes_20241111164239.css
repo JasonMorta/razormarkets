@@ -185,8 +185,7 @@
 
 .content h1 {
   text-align: left;
-  margin: 0 !important;
-  font-family: system-ui, sans-serif !important;
+  margin: 0;
 }
 
 .trade-section h1 {

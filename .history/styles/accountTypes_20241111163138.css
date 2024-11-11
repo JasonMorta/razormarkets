@@ -160,60 +160,6 @@
   margin: auto;
 }
 
-
-
-/* Section 1 */
-
-.trade-section {
-  background-color: #171A20;
-  color: #ffffff;
-  /* padding: 4rem 1.5rem; */
-  padding: 3.75rem 1.25rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 1440px;
-  flex-direction: row;
-}
-
-.trade-section .content {
-  display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    max-width: 30%;
-}
-
-.content h1 {
-  text-align: left;
-  margin: 0 !important;
-  font-family: system-ui, sans-serif !important;
-}
-
-.trade-section h1 {
-  font-size: 5rem;
-  font-weight: bold;
-}
-.trade-section p {
-  margin-top: 1rem;
-  color: #b1b1b3;
-}
-.trade-section .buttons {
-  margin-top: 1.5rem;
-}
-.trade-section .button {
-  border-radius: 5px;
-  font-weight: bold;
-  padding: 0.75rem 1.5rem;
-}
-.button.is-learn-more {
-  background-color: var(--primary-button-color) !important;
-  color: #ffffff;
-}
-.button.is-sign-up {
-  background-color: var(--secondary-button-color) !important;
-  color: #ffffff;
-}
-
 .signup:hover {
   background-color: #00FF8C; /* Hover color */
 }
@@ -239,8 +185,8 @@
   margin-right: 0.5rem;
 }
 
-.info-badges img {
-  max-width: 30dvw;
+.info-badges svg {
+  width: 30dvw;
   min-width: 50px;
 }
 

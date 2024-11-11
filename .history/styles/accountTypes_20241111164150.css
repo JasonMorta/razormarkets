@@ -182,11 +182,8 @@
     flex-wrap: wrap;
     max-width: 30%;
 }
-
-.content h1 {
-  text-align: left;
-  margin: 0 !important;
-  font-family: system-ui, sans-serif !important;
+.trade-section .content {
+  max-width: 765px;
 }
 
 .trade-section h1 {

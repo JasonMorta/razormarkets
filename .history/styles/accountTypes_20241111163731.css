@@ -175,18 +175,8 @@
   max-width: 1440px;
   flex-direction: row;
 }
-
 .trade-section .content {
-  display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    max-width: 30%;
-}
-
-.content h1 {
-  text-align: left;
-  margin: 0 !important;
-  font-family: system-ui, sans-serif !important;
+  max-width: 765px;
 }
 
 .trade-section h1 {
@@ -240,7 +230,7 @@
 }
 
 .info-badges img {
-  max-width: 30dvw;
+  width: 30dvw;
   min-width: 50px;
 }
 

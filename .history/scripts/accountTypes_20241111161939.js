@@ -15,7 +15,7 @@ const accountCards = [
     accountBaseCurrencies: ["ZAR", "USD", "GBP", "EUR"],
     orderExecution: "Market Execution",
     buttonText: "Sign Up",
-    icon: "../assets/svg/bulb-market.svg"
+    icon: "../assets/icons/build.png"
   },
   {
     name: "Razor Blade",
@@ -32,8 +32,7 @@ const accountCards = [
     stopOut: "30%",
     accountBaseCurrencies: ["ZAR", "USD", "GBP", "EUR"],
     orderExecution: "Market Execution",
-    buttonText: "Sign Up",
-    icon: "../assets/svg/bulb-market.svg"
+    buttonText: "Sign Up"
   },
   {
     name: "Razor Edge",
@@ -50,8 +49,7 @@ const accountCards = [
     stopOut: "30%",
     accountBaseCurrencies: ["ZAR", "USD", "GBP", "EUR"],
     orderExecution: "Market Execution",
-    buttonText: "Sign Up",
-    icon: "../assets/svg/bulb-market.svg"
+    buttonText: "Sign Up"
   },
   {
     name: "Razor Edge",
@@ -68,8 +66,7 @@ const accountCards = [
     stopOut: "30%",
     accountBaseCurrencies: ["ZAR", "USD", "GBP", "EUR"],
     orderExecution: "Market Execution",
-    buttonText: "Sign Up",
-    icon: "../assets/svg/bulb-market.svg"
+    buttonText: "Sign Up"
   },
   {
     name: "Razor Edge",
@@ -86,9 +83,8 @@ const accountCards = [
     stopOut: "30%",
     accountBaseCurrencies: ["ZAR", "USD", "GBP", "EUR"],
     orderExecution: "Market Execution",
-    buttonText: "Sign Up",
-    icon: "../assets/svg/bulb-market.svg"
-  }, {
+    buttonText: "Sign Up"
+  },  {
     name: "Razor Edge",
     type: "Micro Account",
     platform: "MT4 & MT5",
@@ -103,8 +99,7 @@ const accountCards = [
     stopOut: "30%",
     accountBaseCurrencies: ["ZAR", "USD", "GBP", "EUR"],
     orderExecution: "Market Execution",
-    buttonText: "Sign Up",
-    icon: "../assets/svg/bulb-market.svg"
+    buttonText: "Sign Up"
   },
   {
     name: "Razor Edge",
@@ -121,8 +116,7 @@ const accountCards = [
     stopOut: "30%",
     accountBaseCurrencies: ["ZAR", "USD", "GBP", "EUR"],
     orderExecution: "Market Execution",
-    buttonText: "Sign Up",
-    icon: "../assets/svg/bulb-market.svg"
+    buttonText: "Sign Up"
   }
 ];
 
@@ -133,7 +127,7 @@ accountCards.forEach(card => {
     <div class="card-bg" id="card-bg">
       <div class="feature-card-account-types">
         <div class="feature-card-header" >
-          <img src=${card.icon} alt="account type icon" />
+          <img src="/assets/svg/bulb-market.svg" alt="feature-card-header" />
           <div class="headers">
             <h2>${card.name}</h2>
             <h3>${card.type}</h3>
