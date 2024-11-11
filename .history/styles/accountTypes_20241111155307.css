@@ -1,0 +1,29 @@
+#accountCardsContainer p {
+  margin: 0;
+}
+
+feature-card-account-types {
+  background: #1f1f1f;
+  /* border: 2px solid transparent; */
+  border-radius: 25px;
+  padding: 20px;
+  text-align: center;
+  /* width: 254px; */
+  height: 100%;
+  transition: border 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: relative;
+}
+
+.feature-card-header {
+  display: flex;
+  
+}
+
+.feature-card-header img {
+  width: 40px;
+  position: relative;
+  transform: none;
+}

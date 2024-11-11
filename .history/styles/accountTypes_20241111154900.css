@@ -1,0 +1,7 @@
+#accountCardsContainer p {
+  margin: 0;
+}
+
+.feature-card-header {
+  display: flex;
+}

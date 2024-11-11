@@ -1,0 +1,115 @@
+#accountCardsContainer p {
+  margin: 0;
+}
+
+#card-bg {
+  width: 254px;
+    height: fit-content;
+    display: flex;
+    border-radius: 20px;
+    background: linear-gradient(180deg, #1EE981 0%, #0E92CA 71.61%);
+    flex-direction: row;
+    align-items: center;
+    padding: 2px;
+    justify-content: center;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.feature-card-account-types {
+  background: #1f1f1f;
+  border: 1px solid rgba(0, 209, 255, 0.5); /* Border with a soft blue glow */
+  border-radius: 20px;
+  padding: 20px;
+  text-align: left;
+  width: 300px; /* Adjust width to match the card dimensions */
+  height: auto;
+  transition: border-color 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Soft shadow */
+}
+
+.feature-card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.feature-card-header img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.feature-card-header h2 {
+  font-size: 20px;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.headers h3 {
+  font-size: 13px;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.feature-card-header h3 {
+  font-size: 14px;
+  color: #BFBFBF; /* Light gray text */
+  margin: 0;
+}
+
+.feature-card-account-types:hover {
+  border-color: #00d1ff; /* Highlight color on hover */
+}
+
+.feature-card-account-types h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+
+.feature-card-account-types p {
+  font-size: 14px;
+  color: #BFBFBF; /* Light gray text */
+  margin-bottom: 10px;
+}
+
+.feature-card-account-types .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  background-color: #3AB8DB; 
+  color: #FFFFFF;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.feature-card-account-types .btn:hover {
+  background-color: #00FF8C; /* Green on hover */
+}
+
+.signup {
+  background-color: #3AB8DB; /* Button color */
+  color: #FFFFFF;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.signup:hover {
+  background-color: #00FF8C; /* Hover color */
+}

@@ -1,0 +1,12 @@
+#accountCardsContainer p {
+  margin: 0;
+}
+
+.feature-card-header {
+  display: flex;
+  position: relative;
+}
+
+.feature-card-header img {
+  width: 40px;
+}

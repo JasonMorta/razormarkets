@@ -1,0 +1,11 @@
+#accountCardsContainer p {
+  margin: 0;
+}
+
+.feature-card-header {
+  display: flex;
+}
+
+.feature-card-header img {
+  width: 40px;
+}
