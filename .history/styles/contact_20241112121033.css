@@ -295,7 +295,7 @@
 }
 
 .tabs ul {
-  border: none !important;
+  border: none;
 }
 
 /* Box styling to match background and input fields */
