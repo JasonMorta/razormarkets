@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form with Tabs</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <style>
+        .box {
+            background-color: #2e2e2e;
+            color: #ffffff;
+        }
+        .box input,
+        .box textarea {
+            background-color: #3a3a3a;
+            color: #ffffff;
+            border: 1px solid #555555;
+        }
+    </style>
+</head>
+<body>
+<section class="section-3">
+    <div class="container">
+        <div class="tabs is-centered">
+            <ul>
+                <li class="is-active" data-tab="client-support"><a>Client Support</a></li>
+                <li data-tab="partners"><a>Partners</a></li>
+                <li data-tab="complaints"><a>Complaints</a></li>
+                <li data-tab="other"><a>Other</a></li>
+            </ul>
+        </div>
+
+        <div class="box">
+            <!-- Client Support Form -->
+            <form id="client-support" class="tab-content">
+                <div class="field">
+                    <label class="label">First Name</label>
+                    <div class="control">
+                        <input class="input" type="text" placeholder="First Name">
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">Surname</label>
+                    <div class="control">
+                        <input class="input" type="text" placeholder="Surname">
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">Phone</label>
+                    <div class="control">
+                        <input class="input" type="text" placeholder="Phone">
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">Email</label>
+                    <div class="control">
+                        <input class="input" type="email" placeholder="Email">
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">Description</label>
+                    <div class="control">
+                        <textarea class="textarea" placeholder="Description"></textarea>
+                    </div>
+                </div>
+                <div class="control">
+                    <button class="button is-info">Submit</button>
+                </div>
+            </form>
+
+            <!-- Partners Form -->
+            <form id="partners" class="tab-content" style="display: none;">
+                <div class="field">
+                    <label class="label">First Name</label>
+                    <div class="control">
+                        <input class="input" type="text" placeholder="First Name">
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">Surname</label>
+                    <div class="control">
+                        <input class="input" type="text" placeholder="Surname">
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">Phone</label>
+                    <div class="control">
+                        <input class="input" type="text" placeholder="Phone">
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">Email</label>
+                    <div class="control">
+                        <input class="input" type="email" placeholder="Email">
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">Country</label>
+                    <div class="control">
+                        <input class="input" type="text" placeholder="Country">
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">Number of clients</label>
+                    <div class="control">
+                        <input class="input" type="number" placeholder="Number of clients">
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">Social Media handle or website</label>
+                    <div class="control">
+                        <input class="input" type="text" placeholder="Social Media handle or website">
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">Years of experience</label>
+                    <div class="control">
+                        <input class="input" type="number" placeholder="Years of experience">
+                    </div>
+                </div>
+                <div class="control">
+                    <button class="button is-info">Submit</button>
+                </div>
+            </form>
+
+            <!-- Complaints Form -->
+            <form id="complaints" class="tab-content" style="display: none;">
+                <div class="field">
+                    <label class="label">First Name</label>
+                    <div class="control">
+                        <input class="input" type="text" placeholder="First Name">
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">Surname</label>
+                    <div class="control">
+                        <input class="input" type="text" placeholder="Surname">
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">Phone</label>
+                    <div class="control">
+                        <input class="input" type="text" placeholder="Phone">
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">Email</label>
+                    <div class="control">
+                        <input class="input" type="email" placeholder="Email">
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">Description</label>
+                    <div class="control">
+                        <textarea class="textarea" placeholder="Description"></textarea>
+                    </div>
+                </div>
+                <div class="control">
+                    <button class="button is-info">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<script>
+    document.querySelectorAll(".tabs ul li").forEach(tab => {
+        tab.addEventListener("click", () => {
+            document.querySelectorAll(".tabs ul li").forEach(t => t.classList.remove("is-active"));
+            tab.classList.add("is-active");
+            
+            const target = tab.getAttribute("data-tab");
+            document.querySelectorAll(".tab-content").forEach(content => {
+                content.style.display = content.id === target ? "block" : "none";
+            });
+        });
+    });
+</script>
+</body>
+</html>
