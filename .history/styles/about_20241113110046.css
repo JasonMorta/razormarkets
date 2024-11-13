@@ -46,7 +46,15 @@
   background-color: var(--secondary-button-color) !important;
   color: #ffffff;
 }
-
+.info-badges {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  position: relative;
+  width: 300px;
+    height: 300px;
+}
 .info-badge {
 /*   background-color: #3c3c3f;
   padding: 0.75rem 1.5rem;
@@ -63,13 +71,7 @@
   margin-right: 0.5rem;
 }
 
-.security-badge {
-  position: relative;
-  width: 300px;
-  height: 300px;
-}
-
-.security-badge img {
+.info-badges img {
   width: 35dvw;
   min-width: 50px;
 }

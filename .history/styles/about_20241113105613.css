@@ -46,30 +46,28 @@
   background-color: var(--secondary-button-color) !important;
   color: #ffffff;
 }
-
+.info-badges {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  position: relative;
+}
 .info-badge {
-/*   background-color: #3c3c3f;
+  background-color: #3c3c3f;
   padding: 0.75rem 1.5rem;
   border-radius: 8px;
   color: #ffffff;
   display: flex;
   align-items: center;
   font-size: 0.875rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); */
-  
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
-
 .info-badge i {
   margin-right: 0.5rem;
 }
 
-.security-badge {
-  position: relative;
-  width: 300px;
-  height: 300px;
-}
-
-.security-badge img {
+.info-badges img {
   width: 35dvw;
   min-width: 50px;
 }
