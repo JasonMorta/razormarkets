@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 28.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 63 63" style="enable-background:new 0 0 63 63;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+	.st1{fill:#5285F7;fill-opacity:0.72;}
+	.st2{fill:url(#SVGID_00000129188601924031586870000016120267047104048831_);fill-opacity:0.2;}
+	.st3{fill:url(#SVGID_00000091729701453004855420000008564211700676389001_);fill-opacity:0.2;}
+	.st4{fill:none;stroke:#FFFFFF;stroke-width:7;stroke-linecap:round;}
+</style>
+<g>
+	
+		<radialGradient id="SVGID_1_" cx="-264.2333" cy="674.4272" r="1" gradientTransform="matrix(22 76.5 53.6526 -15.4295 -30351.6504 30604.9629)" gradientUnits="userSpaceOnUse">
+		<stop  offset="0" style="stop-color:#61CDFF"/>
+		<stop  offset="1" style="stop-color:#305BF3"/>
+	</radialGradient>
+	<circle class="st0" cx="31.5" cy="31.5" r="31.5"/>
+	<path class="st1" d="M29.7,33.2C16.2,44.9,4.3,36.3,0,30.6C0,19.1,18.5-7.1,40,1.8c17.2,7.1,21.2,22.1,21,28.7
+		C56.2,26.5,43.3,21.5,29.7,33.2z"/>
+	
+		<linearGradient id="SVGID_00000119804059708935189190000007527406123086146200_" gradientUnits="userSpaceOnUse" x1="32.6246" y1="458.8897" x2="32.6246" y2="439.9397" gradientTransform="matrix(1 0 0 -1 0 501.8899)">
+		<stop  offset="0" style="stop-color:#59B3FD"/>
+		<stop  offset="1" style="stop-color:#59B3FD;stop-opacity:0"/>
+	</linearGradient>
+	<path style="fill:url(#SVGID_00000119804059708935189190000007527406123086146200_);fill-opacity:0.2;" d="M55.2,49.4
+		c-6.8,11.2-20.8,13-27,12.5c-4.8,0.1-11.7-3.4-15-6c-3.2-1.7-7.3-7.5,5.5-11.5C31.5,40.4,48.4,46,55.2,49.4z"/>
+	
+		<linearGradient id="SVGID_00000149377291487982203460000017014676189978021292_" gradientUnits="userSpaceOnUse" x1="31" y1="483.3899" x2="31" y2="492.8899" gradientTransform="matrix(1 0 0 -1 0 501.8899)">
+		<stop  offset="0" style="stop-color:#E7F5FC;stop-opacity:0"/>
+		<stop  offset="1" style="stop-color:#39FEFE"/>
+	</linearGradient>
+	
+		<ellipse style="fill:url(#SVGID_00000149377291487982203460000017014676189978021292_);fill-opacity:0.2;" cx="31" cy="13" rx="18" ry="12"/>
+	<g>
+		<path class="st4" d="M31.2,17v28.5"/>
+		<path class="st4" d="M45.5,31.3H17"/>
+	</g>
+</g>
+</svg>
