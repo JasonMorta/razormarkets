@@ -1,0 +1,356 @@
+#accountCardsContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 900px;
+  justify-content: center;
+}
+
+
+#accountCardsContainer p {
+  margin: 0;
+}
+
+#card-bg {
+  width: 16.25rem;
+    height: fit-content;
+    display: flex;
+    border-radius: 36px;
+    background: linear-gradient(180deg, #1EE981 0%, #0E92CA 71.61%);
+    flex-direction: row;
+    align-items: center;
+    padding: 0.0625rem;
+    justify-content: center;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.buttons {
+  width: 56%;
+
+}
+
+.feature-card-account-types {
+  background: #26292E;
+  border: 1px solid rgba(0, 209, 255, 0.5); /* Border with a soft blue glow */
+  border-radius: 35px;
+  padding: 20px;
+  text-align: left;
+  width: 300px; /* Adjust width to match the card dimensions */
+  height: auto;
+  transition: border-color 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Soft shadow */
+}
+
+.feature-card-header {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.feature-card-header::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 1px;
+  background-color: #fff; 
+}
+
+.feature-card-header img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  filter: drop-shadow(0px 0px 15px #487DF799);
+}
+
+.feature-card-header h2 {
+  font-size: 20px;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+
+
+.feature-card-header h3 {
+  font-size: 12px !important;
+  margin: 0;
+  font-weight: 400 !important;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.feature-card-account-types:hover {
+  border-color: #00d1ff; /* Highlight color on hover */
+}
+
+.feature-card-account-types h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+
+.card-account-contents {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.card-account-contents p {
+  font-size: 12px !important;
+  color: #BFBFBF; /* Light gray text */
+  margin-bottom: 10px;
+  font-weight: 400 !important;
+  display: flex;
+}
+
+.card-account-contents p strong {
+  width: 50%;
+  color: #fff;
+} 
+
+.card-account-contents::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 1px;
+  background-color: #fff; 
+}
+
+
+
+
+
+
+.feature-card-account-types a {
+  margin: auto;
+}
+
+
+
+/* Section 1 */
+
+/* General Section Styling */
+.trade-section.section-1 {
+  width: 100%;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9; /* Optional: Add a background color for distinction */
+}
+
+/* Main Container for Account Types */
+.account-types-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 1200px; /* Optional: Limit the maximum width */
+  width: 100%;
+  background-color: #fff; /* Optional: Background for content */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+  border-radius: 8px; /* Optional: Rounded corners */
+  overflow: hidden; /* Ensure child elements don't overflow */
+}
+
+/* Content Styling */
+.account-types-content {
+  flex: 1;
+  padding: 40px 30px;
+}
+
+.account-types-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333; /* Optional: Text color */
+}
+
+.account-types-content p {
+  font-size: 1rem;
+  margin-bottom: 30px;
+  color: #555; /* Optional: Text color */
+}
+
+.buttons .button {
+  margin-right: 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.buttons .button.is-success {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.buttons .button.is-success:hover {
+  background-color: #218838;
+}
+
+.buttons .button.is-info {
+  background-color: #17a2b8;
+  color: #fff;
+}
+
+.buttons .button.is-info:hover {
+  background-color: #138496;
+}
+
+/* SVG Image Styling */
+.info-badges {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 30px;
+}
+
+.info-badges img {
+  width: 100%;
+  max-width: 800px;
+  min-width: 500px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Responsive Adjustments */
+
+/* For Tablets and Small Desktops */
+@media (max-width: 1200px) {
+  .info-badges img {
+    max-width: 700px;
+    min-width: 400px;
+  }
+
+  .account-types-content {
+    padding: 30px 20px;
+  }
+
+  .account-types-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .account-types-content p {
+    font-size: 0.95rem;
+  }
+
+  .buttons .button {
+    font-size: 0.95rem;
+    padding: 9px 18px;
+  }
+}
+
+/* For Tablets and Smaller Screens */
+@media (max-width: 992px) {
+  .account-types-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .info-badges img {
+    max-width: 600px;
+    min-width: 300px;
+    margin-top: 20px;
+  }
+
+  .account-types-content h1 {
+    font-size: 2rem;
+  }
+
+  .account-types-content p {
+    font-size: 0.9rem;
+  }
+
+  .buttons .button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}
+
+/* For Mobile Devices */
+@media (max-width: 600px) {
+  .info-badges img {
+    max-width: 500px;
+    min-width: 250px;
+  }
+
+  .account-types-content {
+    padding: 20px 15px;
+  }
+
+  .account-types-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .account-types-content p {
+    font-size: 0.85rem;
+  }
+
+  .buttons .button {
+    font-size: 0.85rem;
+    padding: 7px 14px;
+    margin-right: 5px;
+  }
+}
+/* ==================================================== */
+
+.info-badges img {
+  max-width: 30dvw;
+  min-width: 345px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+    animation: floats 3s ease-in-out infinite;
+}
+
+@keyframes floats {
+  0% {
+  
+      transform: translate(-50%, -50%);
+  }
+  50% {
+      
+      transform: translate(-50%, -48%);
+  }
+  100% {
+  
+      transform:translate(-50%, -50%);
+  }
+}
+
+.info-badges .badge1 {
+  top: -2rem;
+  left: 2rem;
+}
+.info-badges .badge2 {
+  top: 2rem;
+  left: 4rem;
+}
+.info-badges .badge3 {
+  top: 5rem;
+  left: 1rem;
+}
+.shield-icon {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  background: url('https://via.placeholder.com/150') no-repeat center center;
+  background-size: contain;
+}
