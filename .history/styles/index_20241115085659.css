@@ -658,16 +658,3 @@ section h2 {
 .svg-logo {
   /* filter: drop-shadow(0px 0px 15px #48f7884b) !important; */
 }
-
-
-.footer {
-  background-color: #171a20;
-}
-
-.footer a {
-  color: #d2d2d2;
-}
-
-.footer a:hover {
-  color: #3ab8db;
-}

@@ -663,11 +663,3 @@ section h2 {
 .footer {
   background-color: #171a20;
 }
-
-.footer a {
-  color: #d2d2d2;
-}
-
-.footer a:hover {
-  color: #3ab8db;
-}
