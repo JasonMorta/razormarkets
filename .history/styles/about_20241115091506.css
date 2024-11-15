@@ -57,7 +57,7 @@ button {
 }
 
 .security-badge img {
-  width: clamp(500px, 20dvw, 30dvw);
+  width: clamp(500px, 30dvw, 30dvw);
   min-width: 50px;
   position: absolute !important;
   right: 24px;
@@ -70,27 +70,6 @@ button {
   width: 90%;
 }
 
-.cta-buttons {
-  justify-content: flex-start;
-}
-
-@media (max-width: 1000px) {
-  .security-badge img {
-    top: 13%;
-    opacity: .5;
-  }
-  .security-badge {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-
-  .content p {
-    width: 65%;
-  }
-}
-
-
 @media (max-width: 777px) {
   .security-badge img {
     display: none;
@@ -98,15 +77,6 @@ button {
   .security-badge {
     justify-content: center;
     align-items: center;
-    text-align: center;
-  }
-  .content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .content h1 {
     text-align: center;
   }
 }

@@ -36,10 +36,6 @@ body {
   font-size: larger;
 }
 
-.navbar-start {
-  margin-left: 8%;
-}
-
 h1, h2, h3, p, strong, div {
   font-family: 'system-ui', sans-serif !important;
 }

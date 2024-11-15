@@ -100,15 +100,6 @@ button {
     align-items: center;
     text-align: center;
   }
-  .content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .content h1 {
-    text-align: center;
-  }
 }
 
 
