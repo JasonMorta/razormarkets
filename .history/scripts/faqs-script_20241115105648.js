@@ -25,6 +25,51 @@ const faq = [
     title: 'Hello 5',
     answer: 'Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.'
   },
+  {
+    question: 'Is there any setup fee or annual maintenance fee that I need to pay regularly?',
+    title: 'Hello 5',
+    answer: 'Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.'
+  },
+  {
+    question: 'Is there any setup fee or annual maintenance fee that I need to pay regularly?',
+    title: 'Hello 5',
+    answer: 'Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.'
+  },
+    {
+    question: 'What is Razor Markets?',
+    title: 'Hello 1',
+    answer: 'Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.'
+  },
+  {
+    question: 'Do I need to pay to Razor Markets to open an account?',
+    title: 'Hello 2',
+    answer: 'Sed porttitor lectus nibh. Vestibulum ac diam sit amsdsd sdsdet quam vehicula elementum sed sit amet dui.'
+  },
+  {
+    question: 'What payment gateways does Razor Markets support?',
+    title: 'Hello 3',
+    answer: 'Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.'
+  },
+  {
+    question: 'Does Razor Markets provide international payments support?',
+    title: 'Hello 4',
+    answer: 'Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.'
+  },
+  {
+    question: 'Is there any setup fee or annual maintenance fee that I need to pay regularly?',
+    title: 'Hello 5',
+    answer: 'Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.'
+  },
+  {
+    question: 'Is there any setup fee or annual maintenance fee that I need to pay regularly?',
+    title: 'Hello 5',
+    answer: 'Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.'
+  },
+  {
+    question: 'Is there any setup fee or annual maintenance fee that I need to pay regularly?',
+    title: 'Hello 5',
+    answer: 'Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.'
+  },
   // Add more FAQ items as needed
 ];
 

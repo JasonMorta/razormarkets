@@ -50,107 +50,70 @@ button {
     margin: 0;
 }
 
-/* Ensure the section takes full width and has some padding */
-.trade-section {
-  width: 100%;
-  padding: 40px 20px;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Main container to hold content and image side by side */
-.trade-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  max-width: 1200px; /* Optional: limit the maximum width */
-  width: 100%;
-}
-
-/* Content styling */
-.content {
-  flex: 1;
-  padding: 20px;
-}
-
-.content h1 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-}
-
-.content p {
-  font-size: 1rem;
-  margin-bottom: 30px;
-}
-
-.cta-buttons .button {
-  margin-right: 10px;
-}
-
-/* ====== Security badge (image) styling */
 .security-badge {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* padding: 20px; */
+  position: relative;
+  /* position: absolute; */
+  /* right: 30px; */
+  /* top: 0; */
+  width: 255px;
+  height: 300px;
 }
 
 .security-badge img {
-  width: 100%;
-  max-width: 800px;
+  width: clamp(500px, 20dvw, 30dvw);
   min-width: 500px;
-  height: auto;
-  object-fit: contain;
+  position: absolute !important;
+  right: 24px;
+  top: 17%;
+  transform: translateY(-30%);
+  animation: float 3s ease-in-out infinite;
 }
 
-/* Responsive Adjustments */
-@media (max-width: 1200px) {
+.security-badge p {
+  width: 90%;
+}
+
+.cta-buttons {
+  justify-content: flex-start;
+}
+
+@media (max-width: 1000px) {
   .security-badge img {
-    max-width: 700px;
-    min-width: 400px;
+    top: 13%;
+    opacity: .5;
   }
-}
-
-@media (max-width: 992px) {
-  .trade-container {
-    flex-direction: column;
+  .security-badge {
+    justify-content: center;
+    align-items: center;
     text-align: center;
   }
 
-  .security-badge img {
-    max-width: 600px;
-    min-width: 300px;
-    margin-top: 20px;
-  }
-
-  .content h1 {
-    font-size: 2rem;
-  }
-
   .content p {
-    font-size: 0.9rem;
+    width: 65%;
   }
 }
 
-@media (max-width: 600px) {
+
+@media (max-width: 777px) {
   .security-badge img {
-    max-width: 500px;
-    min-width: 250px;
+    display: none;
+  }
+  .security-badge {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .content h1 {
-    font-size: 1.5rem;
-  }
-
-  .content p {
-    font-size: 0.8rem;
+    text-align: center;
   }
 }
 
-/* ====== Security badge (image) styling */
 
 .button.is-learn-more {
   background-color: var(--primary-button-color) !important;

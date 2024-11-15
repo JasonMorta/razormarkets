@@ -6,20 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Razor Markets</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
-  <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="../styles/index.css">
+  <link rel="stylesheet" href="../styles/about.css">
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
-  <link rel="stylesheet" href="/resources/demos/style.css">
   <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
   <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
 </head>
 
 <body>
   <header>
-    <nav class="navbar" aria-label="main navigation">
+    <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
-        <a class="navbar-item navbar-item-logo" href="#">
-          <img src="./assets/svg/logo.svg" alt="Razor Markets Logo">
+        <a class="navbar-item navbar-item-logo" href="/index.html">
+          <img src="../assets/svg/logo.svg" alt="Razor Markets Logo">
         </a>
 
         <!-- Corrected navbar-burger with three spans -->
@@ -32,11 +32,11 @@
 
       <div id="navbarBasicExample" class="navbar-menu">
         <div class="navbar-start">
-          <a class="navbar-item active" href="#">
+          <a class="navbar-item " href="../index.html">
             Home
           </a>
 
-          <a class="navbar-item" href="/pages/about.html">
+          <a class="navbar-item active" href="#">
             About
           </a>
           <a class="navbar-item" href="/pages/accountTypes.html">
@@ -51,8 +51,8 @@
           <div class="navbar-item">
             <div class="buttons">
               <div class="auth-buttons">
-                <button class="button is-info signup" >Sign Up</button>
-                <button class="button is-success login" >Login</button>
+                <button class="button is-info signup">Sign Up</button>
+                <button class="button is-success login">Login</button>
               </div>
             </div>
           </div>
@@ -60,132 +60,106 @@
       </div>
     </nav>
   </header>
+
   <main>
-    <section class="hero section-1">
-      <h1>Navigate the Markets with Confidence</h1>
-      <p>Lorem ipsum dolor sit amet consectetur. Pellentesque vitae est ornare dignissim. Egestas augue ut sed ultrices
-        sed cursus.</p>
-      <div class="cta-buttons">
-       <button class="button is-success login" onclick="window.location.href='#featured-cards-section'" >Learn More</button>
-       <button class="button is-info signup" >Sign Up</button>
+    <section class="trade-section section-1">
+      <!-- Left Content -->
+      <div class="content">
+        <h1>Trade Securely <br> with Razor Markets</h1>
+        <p>Lorem ipsum dolor sit amet consectetur. Pellentesque vitae est ornare dignissim. Egestas augue ut sed
+          ultrices sed cursus.</p>
+        <div class="cta-buttons">
+          <button onclick="window.location.href='#learnmore'" class="button is-success ">Learn More</button>
+          <button class="button is-info signup">Sign Up</button>
+        </div>
+      </div>
+
+      <!-- Right Shield Icon and Badges SVG -->
+      <div   class="security-badge">
+        <img style="position: absolute;" src="/assets/svg/securityBadge.svg" alt="security badge">
       </div>
     </section>
 
     <section class="svg-section section-2">
       <div class="wave-svg">
-        <img src="./assets/svg/Trading_waves_1.svg" alt="Wave SVG">
+        <img src="../assets/svg/Trading_waves_1.svg" alt="Wave SVG">
       </div>
     </section>
 
-    <section class="section-3">
-      <div class="features">
-        <div class="card-bg">
-          <div class="feature-card">
-            <h2>Fast Withdrawals</h2>
-            <p>Lorem ipsum dolor sit amet consectetur. Pellentesque vitae est ornare dignissim. Egestas augue ut sed
-              ultrices sed cursus.</p>
-            <button class="button is-info signup" class="button">Sign Up</button>
-          </div>
+    <section class="feature-section">
+      <!-- Feature Badges -->
+      <div class="feature-badges">
+        <div class="feature-badge">
+          <img src="../assets/svg/bulb.svg" alt="Feature Badge 1">
+          <span class="feature-badge-text">Innovative Trading Platform</span>
         </div>
-
-        <div class="card-bg">
-          <div class="feature-card">
-            <h2>1:1000 Leverage</h2>
-            <p>Lorem ipsum dolor sit amet consectetur. Pellentesque vitae est ornare dignissim. Egestas augue ut sed
-              ultrices sed cursus.</p>
-            <button class="button is-success signup" class="button">Sign Up</button>
-          </div>
+        <div class="feature-badge">
+          <img src="../assets/svg/bulb.svg" alt="Feature Badge 1">
+          <span class="feature-badge-text">Education and Support</span>
         </div>
-        <div class="card-bg">
-          <div class="feature-card">
-            <h2>200% Bonus Account</h2>
-            <p>Lorem ipsum dolor sit amet consectetur. Pellentesque vitae est ornare dignissim. Egestas augue ut sed
-              ultrices sed cursus.</p>
-            <button class="button is-success signup" class="button">Sign Up</button>
-          </div>
+        <div class="feature-badge">
+          <img src="../assets/svg/bulb.svg" alt="Feature Badge 1">
+          <span class="feature-badge-text">Transparency and Security</span>
         </div>
       </div>
-    </section>
 
-    <section class="section-4">
-      <div class="hero-image-container">
-        <div class="hero-image-text-content">
-          <h1 class="title is-1">Sharpen Your Trading Edge!</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur. Pellentesque vitae est ornare dignissim. Egestas augue ut sed
-            ultrices sed cursus.
-          </p>
-          <button class="button is-success login">Sign Up</button>
-        </div>
-        <div data-tilt class="hero-image-inner">
-          <img class="pie-img" src="./assets/svg/pie-image.svg" alt="pie-image">
-        </div>
+      <!-- Description Paragraph -->
+      <p class="feature-description">
+        At Razor Markets, we strive to deliver a seamless trading experience, combining advanced technology with
+        professional expertise. Our team of market analysts and seasoned traders work tirelessly to keep you informed
+        with the latest market trends and insights, giving you the tools to sharpen your trading strategies.
+      </p>
 
+      <!-- Call-to-Action Buttons -->
+      <div class="cta-buttons">
+        <button onclick="window.location.href='#learnmore'" class="button is-success  ">Learn More</button>
+        <button class="button is-info signup">Sign Up</button>
       </div>
     </section>
 
     <section class="svg-section section-5">
       <div class="wave-svg">
-        <img src="./assets/svg/Trading_waves_reversed_1.svg" alt="Wave SVG">
+        <img src="../assets/svg/Trading_waves_reversed_1.svg" alt="Wave SVG">
       </div>
 
     </section>
 
     <!-- Featured cards-->
-    <section id="featured-cards-section">
+    <section class="section-7" id="learnmore">
       <h1 class="title is-1">Why choose Razor Markets</h1>
       <div class="features">
         <div class="card-bg">
           <div class="feature-card">
-            <img src="./assets/svg/screen-share.svg" alt="feature1">
+            <img src="../assets/svg/screen-share.svg" alt="feature1">
             <h2>Cutting-Edge Tools</h2>
             <p>Lorem ipsum dolor sit amet consectetur. Pellentesque vitae est ornare dignissim. Egestas augue ut sed
               ultrices sed cursus.</p>
-            <button class="button is-info signup" class="button">Sign Up</button>
+            <a href="#signup"> <button class="button is-info signup" class="button">Sign Up</button></a>
           </div>
         </div>
 
         <div class="card-bg">
           <div class="feature-card">
-            <img src="./assets/svg/market-stat.svg" alt="feature1">
+            <img src="../assets/svg/market-stat.svg" alt="feature1">
             <h2>Competitive Spreads & Fees</h2>
             <p>Lorem ipsum dolor sit amet consectetur. Pellentesque vitae est ornare dignissim. Egestas augue ut sed
               ultrices sed cursus.</p>
-            <button class="button is-info login" class="button">Sign Up</button>
+            <a href="#signup"> <button class="button is-info signup" class="button">Sign Up</button></a>
           </div>
         </div>
         <div class="card-bg">
           <div class="feature-card">
-            <img src="./assets/svg/plus.svg" alt="feature1">
+            <img src="../assets/svg/plus.svg" alt="feature1">
             <h2>Trusted & Secure:</h2>
             <p>Lorem ipsum dolor sit amet consectetur. Pellentesque vitae est ornare dignissim. Egestas augue ut sed
               ultrices sed cursus.</p>
-            <button class="button is-info signup" class="button">Sign Up</button>
+            <a href="#signup"> <button class="button is-info signup" class="button">Sign Up</button></a>
           </div>
         </div>
       </div>
     </section>
-
-    <!-- FAQs -->
-    <section class="section-6" id="faq-section">
-      <h1>FAQs</h1>
-      <div class="faq-inner"></div>
-
-
-      <!-- Accordion Section -->
-
-      <div class="faq-accordion" style="display: none;">
-        
-      </div>
-    </section>
-    <section class="svg-section section-8">
-      <div class="wave-svg">
-        <img src="./assets/svg/Trading_waves_1.svg" alt="Wave SVG">
-      </div>
-    </section>
-
-
   </main>
+
   <section class="section-8">
     <a href="#">
       <div class="back-to-top">
@@ -202,7 +176,7 @@
       </div>
     </a>
   </section>
-  <!-- Footer -->
+
   <footer class="footer">
     <div class="container">
       <div class="columns">
@@ -229,9 +203,9 @@
         <div class="column is-3">
           <ul>
             <li><a href="#" style="pointer-events: none; color: rgba(128, 128, 128, 0.326)">Blog</a></li>
-            <li><a href="#faq-section">FAQs</a></li>
+            <li><a href="/index.html#faq-section">FAQs</a></li>
             <li><a href="/pages/accountTypes.html">Account Types</a></li>
-            <li><a href="/pages/contact.html" >Support</a></li>
+            <li><a href="#" style="pointer-events: none; color: rgba(128, 128, 128, 0.326)">Support</a></li>
           </ul>
         </div>
 
@@ -281,19 +255,18 @@
           </span>
         </div>
         <p class="disclaimer">
-          Disclaimer: Razor Markets (Pty) Ltd (registration number 2024/605719/07) is a duly appointed Juristic Representative of Elite Financial Services (Pty) Ltd, a company duly incorporated under the laws of South Africa with registration number 2006/022515/07 and regulated by the Financial Sector Conduct Authority (FSCA) under FSP No. 52677. The trading platform provided by Razor Markets enables Clients to engage in derivative trading, offering products issued by RocketX (Pty) Ltd. RocketX (Pty) Ltd, a company duly incorporated under South African law with registration number 2020/824856/07, operates as a licensed Financial Services Provider (FSP) and authorized Over-the-Counter Derivatives Provider (ODP), holding FSCA license number 52142. RocketX (Pty) Ltd is headquartered at WeWork South Africa, 155 West Street, Sandown, Sandton, Gauteng, 2031.
-          In all Contracts for Difference (CFDs) entered into by you (the Client) on the Razor Markets platform, RocketX (Pty) Ltd serves as the designated Counter Party and Principal, assuming full counterparty risk in accordance with regulatory obligations. By using Razor Markets’ services, you acknowledge and agree to be bound by the Client Agreement, a legally binding contract between you (the Client) and RocketX (Pty) Ltd.
+          Disclaimer: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a,
+          mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus
+          elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad
+          litora torquent per conubia.
         </p>
       </div>
     </div>
 
   </footer>
-
-
-  <script src="./scripts/index.js"></script>
-  <script src="./scripts/faqs-script.js"></script>
-  <script src="./scripts/tilt.js"></script>
-  <script src="./scripts/pages/button-links.js"></script>
+  <script src="../scripts/tilt.js"></script>
+  <script src="../scripts/index.js"></script>
+  <script src="../scripts/pages/button-links.js"></script>
 
 </body>
 
