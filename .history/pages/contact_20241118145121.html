@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Razor Markets</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+  <link rel="stylesheet" href="../styles/contact.css">
+  <link rel="stylesheet" href="../styles/index.css">
+
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item navbar-item-logo" href="#">
+          <img src="../assets/svg/logo.svg" alt="Razor Markets Logo">
+        </a>
+
+        <!-- Corrected navbar-burger with three spans -->
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item " href="../index.html">
+            Home
+          </a>
+
+          <a class="navbar-item " href="/pages/about.html">
+            About
+          </a>
+          <a class="navbar-item " href="/pages/accountTypes.html">
+            Account Types
+          </a>
+          <a class="navbar-item active" href="#">
+            Contact
+          </a>
+        </div>
+
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+              <div class="auth-buttons">
+                <a href="#signup"><button class="button is-info signup">Sign Up</button></a>
+                <a href="#login"><button class="button is-success login">Login</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="trade-section section-1">
+      <div class="contact-content account-types-content">
+        <h1></h1>
+        <p style="width: 85%;"></p>
+        <div class="buttons">
+          <button onclick="window.location.href='#accountCardsContainer'" class="button is-success "></button>
+          <button class="button is-info signup"></button>
+        </div>
+      </div>
+      <!-- SVG -->
+      <div class="info-badges">
+        
+      </div>
+    </section>
+
+
+    <section class="svg-section section-2">
+      <div class="wave-svg">
+        <img src="../assets/svg/Trading_waves_1.svg" alt="Wave SVG">
+      </div>
+    </section>
+
+    <!-- FORM Section -->
+    <section class="section">
+      <div class="container form-container">
+          <div class="tabs is-centered">
+              <ul>
+                  <li class="is-active" data-tab="client-support"><a>Client Support</a></li>
+                  <li data-tab="partners"><a>Partners</a></li>
+                  <li data-tab="complaints"><a>Complaints</a></li>
+                  <li data-tab="other"><a>Other</a></li>
+              </ul>
+          </div>
+  
+          <div class="box ">
+              <!-- Client Support Form -->
+              <form id="client-support" class="tab-content">
+                  <div class="form-inputs">
+                    <div class="field">
+                        <label class="label">First Name <span style="color:rgb(253, 52, 52)">*</span></label>
+                        <div class="control">
+                            <input class="input" type="text" placeholder="First Name" required>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label">Surname</label>
+                        <div class="control">
+                            <input class="input" type="text" placeholder="Surname">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label">Phone</label>
+                        <div class="control">
+                            <input class="input" type="text" placeholder="Phone">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label">Email <span style="color:rgb(253, 52, 52)">*</span></label>
+                        <div class="control">
+                            <input class="input" type="email" placeholder="Email" required>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="field">
+                      <label class="label">Description <span style="color:rgb(253, 52, 52)">*</span></label>
+                      <div class="control">
+                          <textarea class="textarea" placeholder="Description" required></textarea>
+                      </div>
+                  </div>
+                  <div class="control">
+                      <button class="button is-info">Submit</button>
+                  </div>
+              </form>
+  
+              <!-- Partners Form -->
+              <form id="partners" class="tab-content" style="display: none;">
+                  <div class="form-inputs">
+                    <div class="field">
+                        <label class="label">First Name <span style="color:rgb(253, 52, 52)">*</span></label>
+                        <div class="control">
+                            <input class="input" type="text" placeholder="First Name" required>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label">Surname</label>
+                        <div class="control">
+                            <input class="input" type="text" placeholder="Surname">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label">Phone</label>
+                        <div class="control">
+                            <input class="input" type="text" placeholder="Phone">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label">Email <span style="color:rgb(253, 52, 52)">*</span></label>
+                        <div class="control">
+                            <input class="input" type="email" placeholder="Email" required>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label">Country</label>
+                        <div class="control">
+                            <input class="input" type="text" placeholder="Country">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label">Number of clients</label>
+                        <div class="control">
+                            <input class="input" type="number" placeholder="Number of clients">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label">Social Media handle or website</label>
+                        <div class="control">
+                            <input class="input" type="text" placeholder="Social Media handle or website">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label">Years of experience</label>
+                        <div class="control">
+                            <input class="input" type="number" placeholder="Years of experience">
+                        </div>
+                    </div>
+                  </div>
+                  <div class="control">
+                      <button class="button is-info">Submit</button>
+                  </div>
+              </form>
+  
+              <!-- Complaints Form -->
+              <form id="complaints" class="tab-content" style="display: none;">
+                  <div class="form-inputs">
+                    <div class="field">
+                        <label class="label">First Name <span style="color:rgb(253, 52, 52)">*</span></label>
+                        <div class="control">
+                            <input class="input" type="text" placeholder="First Name" required>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label">Surname</label>
+                        <div class="control">
+                            <input class="input" type="text" placeholder="Surname">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label">Phone</label>
+                        <div class="control">
+                            <input class="input" type="text" placeholder="Phone">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label">Email <span style="color:rgb(253, 52, 52)">*</span></label>
+                        <div class="control">
+                            <input class="input" type="email" placeholder="Email" required>
+                        </div>
+                    </div>
+                  </div>
+                    <div class="field">
+                        <label class="label">Description</label>
+                        <div class="control">
+                            <textarea class="textarea" placeholder="Description"></textarea>
+                        </div>
+                    </div>
+                
+                  <div class="control">
+                      <button class="button is-info">Submit</button>
+                  </div>
+              </form>
+
+               <!-- Other Form -->
+              <form id="other" class="tab-content" style="display: none;">
+                <div class="form-inputs">
+                  <div class="field">
+                      <label class="label">First Name <span style="color:rgb(253, 52, 52)">*</span></label>
+                      <div class="control">
+                          <input class="input" type="text" placeholder="First Name" required>
+                      </div>
+                  </div>
+                  <div class="field">
+                      <label class="label">Surname</label>
+                      <div class="control">
+                          <input class="input" type="text" placeholder="Surname">
+                      </div>
+                  </div>
+                  <div class="field">
+                      <label class="label">Phone</label>
+                      <div class="control">
+                          <input class="input" type="text" placeholder="Phone">
+                      </div>
+                  </div>
+                  <div class="field">
+                      <label class="label">Email <span style="color:rgb(253, 52, 52)">*</span></label>
+                      <div class="control">
+                          <input class="input" type="email" placeholder="Email" required>
+                      </div>
+                  </div>
+                </div>
+                <div class="field">
+                    <label class="label">Description <span style="color:rgb(253, 52, 52)">*</span></label>
+                    <div class="control">
+                        <textarea class="textarea" placeholder="Description" required></textarea>
+                    </div>
+                </div>
+                <div class="control">
+                    <button class="button is-info">Submit</button>
+                </div>
+              </form>
+          </div>
+      </div>
+  </section>
+
+
+
+    <section class="svg-section section-5">
+      <div class="wave-svg">
+       <img src="../assets/svg/Trading_waves_reversed_1.svg" alt="Wave SVG">
+      </div>
+  
+    </section>
+
+
+    <section >
+      <a class="back-to-top" href="#">
+        <div >
+          <svg width="64px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+            stroke="#bf3636">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <circle opacity="0.5" cx="12" cy="12" r="10" stroke="#4f8cba" stroke-width="1.5"></circle>
+              <path d="M12 16L12 8M12 8L15 11M12 8L9 11" stroke="#4f8cba" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round"></path>
+            </g>
+          </svg>
+        </div>
+      </a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="columns">
+  
+          <!-- Logo and Social Media Icons -->
+          <div class="column is-3">
+            <figure style="margin-bottom: 0" class="footer-logo">
+              <img class="svg-logo" src="/assets/svg/logo-only.svg" alt="logo">
+            </figure>
+  
+          </div>
+  
+          <!-- Quick Links Section -->
+          <div class="column is-3">
+            <p class="footer-section-title">Quick Links</p>
+            <ul>
+              <li><a href="#" style="pointer-events: none; color: rgba(128, 128, 128, 0.326)">Start Trading</a></li>
+              <li><a href="/pages/about.html">About Us</a></li>
+              <li><a href="#" style="pointer-events: none; color: rgba(128, 128, 128, 0.326)">Deposits and Withdrawals</a></li>
+              <li><a href="/pages/legalDocs.html">Legal Documents</a></li>
+            </ul>
+          </div>
+  
+          <div class="column is-3">
+            <ul>
+              <li><a href="#" style="pointer-events: none; color: rgba(128, 128, 128, 0.326)">Blog</a></li>
+              <li><a href="/index.html#faq-section">FAQs</a></li>
+              <li><a href="/pages/accountTypes.html">Account Types</a></li>
+              <li><a href="#">Support</a></li>
+            </ul>
+          </div>
+  
+          <!-- Contact Information Section -->
+          <div class="column is-3">
+            <p class="footer-section-title">Get in touch</p>
+            <p>support@razormarkets.com</p>
+            <p>+27 00 000 0000</p>
+            <p>+27 12 345 6789</p>
+            <p>Physical Addr: 123 ABC Street, Main Road, Cape Town</p>
+          </div>
+        </div>
+  
+        <!-- Disclaimer Section -->
+        <hr>
+        <div class="footer-end">
+          <div class="social-icons">
+            <span class="icon">
+              <a href="#">
+                <img src="/assets/svg/social-media/x.svg" alt="x twiter icon" >
+              </a>
+  
+            </span>
+            <span class="icon">
+              <a href="#">
+                <img src="/assets/svg/social-media/linkedIn.svg" alt="linkedIn icon" >
+              </a>
+  
+            </span>
+            <span class="icon">
+              <a href="#">
+               <img src="/assets/svg/social-media/facebook.svg" alt="facebook icon" >
+              </a>
+  
+            </span>
+            <span class="icon">
+              <a href="#">
+                <img src="/assets/svg/social-media/instagram.svg" alt="instagram icon" >
+              </a>
+  
+            </span>
+            <span class="icon">
+              <a href="#">
+                <img src="/assets/svg/social-media/telegram.svg" alt="telegram icon">
+              </a>
+  
+            </span>
+          </div>
+          <p class="disclaimer">
+          </p>
+        </div>
+      </div>
+  
+    </footer>
+ 
+  </main>
+  <script src="../scripts/pages/contact-page/page-content.js"></script>
+  <script src="../scripts/pages/contact-page/contact-form.js"></script>
+  <script src="../scripts/index.js"></script>
+  
+</body>
+
+</html>
