@@ -11,14 +11,19 @@ const faq = [
     answer: 'No, opening an account with Razor Markets is completely free. There are no setup or maintenance fees associated with creating a trading account. However, you will need to fund your account to start trading.'
   },
   {
-    question: 'What trading platforms does Razor Markets offer?',
-    title: 'What trading platforms does Razor Markets offer?',
+    question: 'What payment gateways does Razor Markets support?',
+    title: 'What payment gateways does Razor Markets support?',
     answer: 'Razor Markets offers advanced and user-friendly trading platforms designed for both beginners and experienced traders. These include desktop, web, and mobile trading platforms, ensuring you can trade seamlessly from anywhere.'
   },
   {
-    question: 'Is Razor Markets regulated?',
-    title: 'Is Razor Markets regulated?',
-    answer: `Yes, Razor Markets operates under strict regulatory guidelines to ensure transparency, security, and compliance. We adhere to industry standards to protect our clients' funds and provide a secure trading environment.`
+    question: 'Does Razor Markets provide international payments support?',
+    title: 'Hello 4',
+    answer: 'Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.'
+  },
+  {
+    question: 'Is there any setup fee or annual maintenance fee that I need to pay regularly?',
+    title: 'Is there any setup fee or annual maintenance fee that I need to pay regularly?',
+    answer: `Yes, Razor Markets operates under strict regulatory guidelines to ensure transparency, security, and compliance. We adhere to industry standards to protect our clients funds and provide a secure trading environment.`
   },
   {
     question: `What financial instruments can I trade with Razor Markets?`,
@@ -236,8 +241,8 @@ function populateFaqAccordion() {
 
     const answerDiv = document.createElement('div');
 
-    const answerParagraph = document.createElement('div');
-    answerParagraph.innerHTML = item.answer;
+    const answerParagraph = document.createElement('p');
+    answerParagraph.textContent = item.answer;
 
     answerDiv.appendChild(answerParagraph);
 

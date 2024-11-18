@@ -236,8 +236,8 @@ function populateFaqAccordion() {
 
     const answerDiv = document.createElement('div');
 
-    const answerParagraph = document.createElement('div');
-    answerParagraph.innerHTML = item.answer;
+    const answerParagraph = document.createElement('p');
+    answerParagraph.textContent = item.answer;
 
     answerDiv.appendChild(answerParagraph);
 
