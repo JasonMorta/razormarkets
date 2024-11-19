@@ -7,7 +7,7 @@ const section1 = {
 }
 
 
-
+// ==================DO NOT MODIFY THE CODE BELOW!==================
 
 //document.querySelector('.contact-content > h1').textContent = section1.heading;
 
@@ -22,49 +22,44 @@ const cards = [
   { 
     title: "Read our Complaints Policy",
     action: "Read",
-    link: `/assets/legalDocs/logalDocs-PSFs/Razor-COI-Policy-24.pdf`,
+    link: ``,
   },
   { 
     title: "Read our Privacy Policy",
     action: "Read",
-    link: `/assets/legalDocs/logalDocs-PSFs/Razor-Privacy-24.pdf`,
+    link: ``,
   },
   { 
     title: "Read our Risky Policy",
     action: "Read",
-    link: `/assets/legalDocs/logalDocs-PSFs/Razor-Risky-Policy-24.pdf`,
+    link: ``,
   },
   { 
     title: "Read our FAIS Disclosure",
     action: "Read",
-    link: `/assets/legalDocs/logalDocs-PSFs/Razor-Client-Agreement-24.pdf`,
+    link: ``,
   },
   { 
     title: "Read our Terms and Conditions",
     action: "Read",
-    link: `/assets/legalDocs/logalDocs-PSFs/Razor-GTC-24.pdf`,
+    link: ``,
   },
   { 
     title: "Read our PAIA Manual",
     action: "Read",
-    link: `/assets/legalDocs/logalDocs-PSFs/Razor-PAIA-Manual-24.pdf`,
+    link: ``,
   },
-  // { 
-  //   title: "Download our Complaints Policy",
-  //   action: "Download",
-  //   link: ``,
-  // },
-  // { 
-  //   title: "Download our Bonus Terms",
-  //   action: "Download",
-  //   link: ``,
-  // }
+  { 
+    title: "Download our Complaints Policy",
+    action: "Download",
+    link: ``,
+  },
+  { 
+    title: "Download our Bonus Terms",
+    action: "Download",
+    link: ``,
+  }
 ];
-
-
-
-
-// ==================DO NOT MODIFY THE CODE BELOW!==================
 
 const container = document.querySelector('.card-container');
 
