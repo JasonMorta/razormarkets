@@ -78,6 +78,7 @@ button {
 .content h1 {
   font-size: 2.5rem;
   margin-bottom: 20px;
+  width: max-content;
 }
 
 .content p {
@@ -87,6 +88,12 @@ button {
 
 .cta-buttons .button {
   margin-right: 10px;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: start;
+  gap: 15px;
 }
 
 /* ====== Security badge (image) styling */
@@ -104,6 +111,22 @@ button {
   min-width: 500px;
   height: auto;
   object-fit: contain;
+  animation: floats 3s ease-in-out infinite;
+}
+
+@keyframes floats {
+  0% {
+  
+      transform: translate(0%, 0%);
+  }
+  50% {
+      
+      transform: translate(0%, -2%);
+  }
+  100% {
+  
+      transform:translate(0%, 0%);
+  }
 }
 
 /* Responsive Adjustments */
@@ -233,7 +256,7 @@ button {
   border: 1px solid #D9D9D94D;
   backdrop-filter: blur(20px);
   background: #D9D9D94D;
-  height: 80px;
+  /* height: 80px; */
 }
 
 /* Icon inside badge */
@@ -247,9 +270,11 @@ button {
 
 /* Text in each badge */
 .feature-badge-text {
-  font-size: 1rem;
-  font-weight: bold;
+  font-size: 1.4rem;
+  font-weight: 300;
+  width: 50%;
   color: #ffffff;
+  text-align: left;
 }
 
 /* Paragraph styling */

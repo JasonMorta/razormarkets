@@ -6,7 +6,6 @@
   justify-content: center;
 }
 
-
 #accountCardsContainer p {
   margin: 0;
 }
@@ -27,8 +26,10 @@
 
 .buttons {
   width: 56%;
-
+  flex-wrap: nowrap !important;
 }
+
+
 
 .feature-card-account-types {
   background: #26292E;
@@ -222,7 +223,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-    animation: floats 3s ease-in-out infinite;
+  animation: floats 3s ease-in-out infinite;
 }
 
 @keyframes floats {

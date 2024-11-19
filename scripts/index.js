@@ -1,4 +1,5 @@
 
+
 // Adds the back to top button to all the page
 function backToTopButton() {
 
