@@ -16,7 +16,7 @@ const accountCards = [
     orderExecution: "Market Execution",
     buttonText: "Sign Up",
     buttonLink: "https://my.razormarkets.com/register",
-    icon: "../assets/accountTypes/Razor-Blade.svg"
+    icon: "../assets/accountTypes-page/Razor-Blade.svg"
   },
   {
     name: "Razor Blade",
@@ -35,7 +35,7 @@ const accountCards = [
     orderExecution: "Market Execution",
     buttonText: "Sign Up",
     buttonLink: "https://my.razormarkets.com/register",
-    icon: "../assets/accountTypes/Razor-Blade.svg"
+    icon: "../assets/svg/bulb-market.svg"
   },
   {
     name: "Razor Edge",
@@ -54,9 +54,9 @@ const accountCards = [
     orderExecution: "Market Execution",
     buttonText: "Sign Up",
     buttonLink: "https://my.razormarkets.com/register",
-    icon: "../assets/accountTypes/Razor-Blade.svg"
+    icon: "../assets/svg/bulb-market.svg"
   },
-  // Add more account cards here
+ // Add more account cards here
 ];
 
 

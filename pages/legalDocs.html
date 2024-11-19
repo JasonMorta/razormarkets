@@ -76,8 +76,8 @@
         </div>
       </div>
       <!-- SVG -->
-      <div class="info-badges">
-        <img src="../assets/svg/document.svg" alt="Shield Icon">
+      <div data-tilt class="info-badges">
+        <img src="../assets/legalDocs/Legal-docs-image.svg" alt="Shield Icon">
       </div>
     </section>
 
@@ -208,39 +208,13 @@
       </a>
     </section>
   </main>
+  <script src="../scripts/tilt.js"></script>
+  <script src="../scripts/pages/legal-docs/page-content.js"></script>
   <script src="../scripts/index.js"></script>
+
   <script src="../scripts/pages/button-links.js"></script>
-  <script>
-    const cards = [
-    { title: "Read our AML Policy", action: "Read" },
-    { title: "Read our Complaints Policy", action: "Read" },
-    { title: "Read our Privacy Policy", action: "Read" },
-    { title: "Read our Risky Policy", action: "Read" },
-    { title: "Read our FAIS Disclosure", action: "Read" },
-    { title: "Read our Terms and Conditions", action: "Read" },
-    { title: "Read our PAIA Manual", action: "Read" },
-    { title: "Download our Complaints Policy", action: "Download" },
-    { title: "Download our Bonus Terms", action: "Download" }
-];
-
-const container = document.getElementById('card-container');
-
-cards.forEach(card => {
-    const cardElement = document.createElement('div');
-    cardElement.className = 'card';
-    cardElement.innerHTML = `
-        <div class="card-icon">
-          <img src="../assets/svg/bulb.svg" alt="Document Download Icon">
-        </div>
-        <div class="card-content">
-            <p>${card.title}</p>
-        </div>
-    `;
-    container.appendChild(cardElement);
-});
 
 
-  </script>
 </body>
 
 </html>
