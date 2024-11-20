@@ -25,6 +25,10 @@ const faq = [
     title: 'Hello 5',
     answer: 'Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.'
   },
+  {
+    question: 'Is Razor Markets Regulated ',
+    title: 'Hello 6',
+  }
 
   // Add more FAQ items as needed
 ];
